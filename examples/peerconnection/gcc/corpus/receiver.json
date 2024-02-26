@@ -6,11 +6,11 @@
         },
         "receiver": {
             "enabled": true,
-            "listening_ip": "0.0.0.0",
+            "listening_ip": "127.0.0.1",
             "listening_port": 8000
         }
     },
-    "bwe_feedback_duration": 200,
+		"bwe_feedback_duration": 200,
     "video_source": {
         "video_disabled": {
             "enabled": true
@@ -34,13 +34,13 @@
     "save_to_file": {
         "enabled": true,
         "audio": {
-            "file_path": "outaudio.wav"
+            "file_path": "testmedia/outaudio.wav"
         },
         "video": {
-            "width": 320,
-            "height": 240,
-            "fps": 10,
-            "file_path": "outvideo.yuv"
+            "width": 704,
+            "height": 576,
+            "fps": 30,
+            "file_path": "testmedia/outvideo.y4m"
         }
     },
     "logging": {

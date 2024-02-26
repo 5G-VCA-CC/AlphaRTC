@@ -1,0 +1,1184 @@
+(field_trial.cc:140): Setting field trial string:WebRTC-KeepAbsSendTimeExtension/Enabled/
+(audio_processing_impl.cc:272): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+(webrtc_voice_engine.cc:206): WebRtcVoiceEngine::WebRtcVoiceEngine
+(webrtc_video_engine.cc:572): WebRtcVideoEngine::WebRtcVideoEngine()
+(webrtc_voice_engine.cc:228): WebRtcVoiceEngine::Init
+(webrtc_voice_engine.cc:315): WebRtcVoiceEngine::ApplyOptions: AudioOptions {aec: 1, agc: 1, ns: 1, hf: 1, swap: 0, audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, typing: 1, experimental_agc: 0, experimental_ns: 0, residual_echo_detector: 1, }
+(webrtc_voice_engine.cc:431): Stereo swapping enabled? 0
+(webrtc_voice_engine.cc:436): NetEq capacity is 200
+(webrtc_voice_engine.cc:442): NetEq fast mode? 0
+(webrtc_voice_engine.cc:448): NetEq minimum delay is 0
+(webrtc_voice_engine.cc:454): NetEq handle reordered packets? 0
+(webrtc_voice_engine.cc:474): Experimental ns is enabled? 0
+(webrtc_voice_engine.cc:525): NS set to 1
+(webrtc_voice_engine.cc:529): Typing detection is enabled? 1
+(audio_processing_impl.cc:526): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: {maximum_internal_processing_rate: 48000, multi_channel_render: 0, , multi_channel_capture: 0}, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 1 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: Rms, use_saturation_protector: 1, extra_saturation_margin_db: 2 } }, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 } }
+(agc_manager_direct.cc:69): [agc] GetMinMicLevel
+(agc_manager_direct.cc:73): [agc] Using default min mic level: 12
+(rtc_event_log_impl.cc:43): Creating legacy encoder for RTC event log.
+(peer_connection_factory.cc:391): Using default network controller factory
+(bitrate_prober.cc:69): Bandwidth probing enabled, set to inactive
+(paced_sender.cc:176): ProcessThreadAttached 0x98071630
+(cpu_info.cc:53): Available number of cores: 16
+(aimd_rate_control.cc:113): Using aimd rate control with back off factor 0.85
+(remote_bitrate_estimator_single_stream.cc:72): RemoteBitrateEstimatorSingleStream: Instantiating.
+(remote_estimator_proxy.cc:56): Maximum interval between transport feedback RTCP messages (ms): 250
+(peer_connection.cc:1610): Adding audio transceiver in response to a call to AddTrack.
+(openssl_identity.cc:43): Making key pair
+(openssl_identity.cc:91): Returning key pair
+(openssl_certificate.cc:59): Making certificate for WebRTC
+(peer_connection.cc:1610): Adding video transceiver in response to a call to AddTrack.
+(openssl_certificate.cc:109): Returning certificate
+(used_ids.h:55): Duplicate id found. Reassigning from 102 to 127
+(used_ids.h:55): Duplicate id found. Reassigning from 104 to 125
+(used_ids.h:55): Duplicate id found. Reassigning from 106 to 124
+(used_ids.h:55): Duplicate id found. Reassigning from 103 to 123
+(used_ids.h:55): Duplicate id found. Reassigning from 105 to 122
+(used_ids.h:55): Duplicate id found. Reassigning from 1 to 14
+(used_ids.h:55): Duplicate id found. Reassigning from 3 to 13
+(used_ids.h:55): Duplicate id found. Reassigning from 5 to 12
+(used_ids.h:55): Duplicate id found. Reassigning from 6 to 11
+(p2p_transport_channel.cc:526): Set backup connection ping interval to 25000 milliseconds.
+(p2p_transport_channel.cc:535): Set ICE receiving timeout to 2500 milliseconds
+(p2p_transport_channel.cc:542): Set ping most likely connection to 0
+(p2p_transport_channel.cc:549): Set stable_writable_connection_ping_interval to 2500
+(p2p_transport_channel.cc:562): Set presume writable when fully relayed to 0
+(p2p_transport_channel.cc:580): Set regather_on_failed_networks_interval to 300000
+(p2p_transport_channel.cc:587): Set receiving_switching_delay to 1000
+(jsep_transport_controller.cc:1215): Creating DtlsSrtpTransport.
+(dtls_srtp_transport.cc:62): Setting RTCP Transport on 0 transport 0
+(dtls_srtp_transport.cc:67): Setting RTP Transport on 0 transport a00037e0
+(p2p_transport_channel.cc:526): Set backup connection ping interval to 25000 milliseconds.
+(p2p_transport_channel.cc:535): Set ICE receiving timeout to 2500 milliseconds
+(p2p_transport_channel.cc:542): Set ping most likely connection to 0
+(p2p_transport_channel.cc:549): Set stable_writable_connection_ping_interval to 2500
+(p2p_transport_channel.cc:562): Set presume writable when fully relayed to 0
+(p2p_transport_channel.cc:580): Set regather_on_failed_networks_interval to 300000
+(p2p_transport_channel.cc:587): Set receiving_switching_delay to 1000
+(jsep_transport_controller.cc:1215): Creating DtlsSrtpTransport.
+(dtls_srtp_transport.cc:62): Setting RTCP Transport on 1 transport 0
+(dtls_srtp_transport.cc:67): Setting RTP Transport on 1 transport a00061e0
+(p2p_transport_channel.cc:460): Set ICE ufrag: PSHv pwd: rXdB/YEynXHJfDjTU7OiVe15 on transport 0
+(p2p_transport_channel.cc:460): Set ICE ufrag: PSHv pwd: rXdB/YEynXHJfDjTU7OiVe15 on transport 1
+(webrtc_voice_engine.cc:1495): Setting voice channel options: AudioOptions {audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
+(webrtc_voice_engine.cc:315): WebRtcVoiceEngine::ApplyOptions: AudioOptions {audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
+(webrtc_voice_engine.cc:436): NetEq capacity is 200
+(webrtc_voice_engine.cc:442): NetEq fast mode? 0
+(webrtc_voice_engine.cc:448): NetEq minimum delay is 0
+(webrtc_voice_engine.cc:454): NetEq handle reordered packets? 0
+(webrtc_voice_engine.cc:474): Experimental ns is enabled? 0
+(audio_processing_impl.cc:526): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: {maximum_internal_processing_rate: 48000, multi_channel_render: 0, , multi_channel_capture: 0}, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 1 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: Rms, use_saturation_protector: 1, extra_saturation_margin_db: 2 } }, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 } }
+(webrtc_voice_engine.cc:1513): Set voice channel options. Current options: AudioOptions {audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
+(channel.cc:145): Created channel for 0
+(webrtc_video_engine.cc:585): CreateMediaChannel. Options: VideoOptions {}
+(channel.cc:145): Created channel for 1
+(peer_connection.cc:4794): Session: 4830738469252296483 Old state: kStable New state: kHaveLocalOffer
+(channel.cc:824): Setting local voice description
+(webrtc_voice_engine.cc:1356): WebRtcVoiceMediaChannel::SetRecvParameters: {codecs: [AudioCodec[111:opus:48000:0:2], AudioCodec[103:ISAC:16000:0:1], AudioCodec[104:ISAC:32000:0:1], AudioCodec[9:G722:8000:0:1], AudioCodec[102:ILBC:8000:0:1], AudioCodec[0:PCMU:8000:0:1], AudioCodec[8:PCMA:8000:0:1], AudioCodec[106:CN:32000:0:1], AudioCodec[105:CN:16000:0:1], AudioCodec[13:CN:8000:0:1], AudioCodec[110:telephone-event:48000:0:1], AudioCodec[112:telephone-event:32000:0:1], AudioCodec[113:telephone-event:16000:0:1], AudioCodec[126:telephone-event:8000:0:1]], extensions: [{uri: urn:ietf:params:rtp-hdrext:ssrc-audio-level, id: 1}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}]}
+(webrtc_voice_engine.cc:1523): Setting receive voice codecs.
+(webrtc_voice_engine.cc:1794): AddSendStream: {id:audio_label;ssrcs:[2827869570];ssrc_groups:;cname:4Erob9GPwgUH4r18;stream_ids:stream_id;}
+(delay_manager.cc:73): Delay histogram config: quantile=1041529569 forget_factor=32745 start_forget_weight=2
+(decision_logic.cc:55): NetEq decision logic settings: estimate_dtx_delay=0 time_stretch_cn=0 target_level_window_ms=100
+(neteq_impl.cc:144): NetEq config: sample_rate_hz=16000, enable_post_decode_vad=true, max_packets_in_buffer=200, min_delay_ms=0, enable_fast_accelerate=false, enable_muted_state=false, enable_rtx_handling=false
+(audio_coding_module.cc:224): Created
+(audio_send_stream.cc:160): AudioSendStream: 2827869570
+(audio_send_stream.cc:227): AudioSendStream::ConfigureStream: {rtp: {ssrc: 2827869570, extmap-allow-mixed: false, extensions: [], c_name: 4Erob9GPwgUH4r18}, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: -1, max_bitrate_bps: -1, send_codec_spec: <unset>}
+(channel.cc:635): Add send stream ssrc: 2827869570
+(channel.cc:816): Changing voice state, recv=0 send=0
+(channel.cc:978): Setting local video description
+(webrtc_video_engine.cc:1160): SetRecvParameters: {codecs: [VideoCodec[96:VP8], VideoCodec[97:rtx], VideoCodec[98:VP9], VideoCodec[99:rtx], VideoCodec[100:VP9], VideoCodec[101:rtx], VideoCodec[127:AV1X], VideoCodec[123:rtx], VideoCodec[125:red], VideoCodec[122:rtx], VideoCodec[124:ulpfec]], extensions: [{uri: urn:ietf:params:rtp-hdrext:toffset, id: 14}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 12}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 11}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07, id: 8}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 9}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}]}
+(webrtc_video_engine.cc:1176): Changing recv codecs from {VideoCodec[96:VP8], VideoCodec[98:VP9], VideoCodec[100:VP9], VideoCodec[102:AV1X]} to {VideoCodec[96:VP8], VideoCodec[98:VP9], VideoCodec[100:VP9], VideoCodec[127:AV1X]}
+(webrtc_video_engine.cc:1277): AddSendStream: {id:video_label;ssrcs:[694021979,1858984452];ssrc_groups:{semantics:FID;ssrcs:[694021979,1858984452]};cname:4Erob9GPwgUH4r18;stream_ids:stream_id;}
+(webrtc_video_engine.cc:1324): SetLocalSsrc on all the receive streams because we added a send stream.
+(channel.cc:635): Add send stream ssrc: 694021979
+(channel.cc:965): Changing video state, send=0
+(webrtc_voice_engine.cc:1495): Setting voice channel options: AudioOptions {}
+(webrtc_voice_engine.cc:315): WebRtcVoiceEngine::ApplyOptions: AudioOptions {audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
+(webrtc_voice_engine.cc:436): NetEq capacity is 200
+(webrtc_voice_engine.cc:442): NetEq fast mode? 0
+(webrtc_voice_engine.cc:448): NetEq minimum delay is 0
+(webrtc_voice_engine.cc:454): NetEq handle reordered packets? 0
+(webrtc_voice_engine.cc:474): Experimental ns is enabled? 0
+(audio_processing_impl.cc:526): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: {maximum_internal_processing_rate: 48000, multi_channel_render: 0, , multi_channel_capture: 0}, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 1 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: Rms, use_saturation_protector: 1, extra_saturation_margin_db: 2 } }, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 } }
+(webrtc_voice_engine.cc:1513): Set voice channel options. Current options: AudioOptions {audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
+(webrtc_video_engine.cc:1236): SetVideoSend (ssrc= 694021979, options: VideoOptions {is_screencast : false, }, source = (source))
+(basic_port_allocator.cc:375): Start getting ports with turn_port_prune_policy 0
+(basic_port_allocator.cc:375): Start getting ports with turn_port_prune_policy 0
+(basic_port_allocator.cc:111): Filtered out ignored networks:
+(basic_port_allocator.cc:113): Net[lo:0:0:0:x:x:x:x:x/128:Loopback:id=3]
+(basic_port_allocator.cc:113): Net[lo:127.0.0.x/8:Loopback:id=2]
+(basic_port_allocator.cc:861): Network manager has started
+(basic_port_allocator.cc:111): Filtered out ignored networks:
+(basic_port_allocator.cc:113): Net[lo:0:0:0:x:x:x:x:x/128:Loopback:id=3]
+(basic_port_allocator.cc:113): Net[lo:127.0.0.x/8:Loopback:id=2]
+(basic_port_allocator.cc:861): Network manager has started
+(basic_port_allocator.cc:111): Filtered out ignored networks:
+(basic_port_allocator.cc:113): Net[lo:0:0:0:x:x:x:x:x/128:Loopback:id=3]
+(basic_port_allocator.cc:113): Net[lo:127.0.0.x/8:Loopback:id=2]
+(basic_port_allocator.cc:776): Allocate ports on 1 networks
+(basic_port_allocator.cc:111): Filtered out ignored networks:
+(basic_port_allocator.cc:113): Net[lo:0:0:0:x:x:x:x:x/128:Loopback:id=3]
+(basic_port_allocator.cc:113): Net[lo:127.0.0.x/8:Loopback:id=2]
+(basic_port_allocator.cc:776): Allocate ports on 1 networks
+(basic_port_allocator.cc:1353): Net[eth0:172.16.11.x/24:Ethernet:id=1]: Allocation Phase=Udp
+(port.cc:186): Port[a002b410::1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Port created with network cost 0
+(basic_port_allocator.cc:1424): AllocationSequence: UDPPort will be handling the STUN candidate generation.
+(basic_port_allocator.cc:885): Adding allocated port for 0
+(basic_port_allocator.cc:906): Port[a002b410:0:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Added port to allocator
+(basic_port_allocator.cc:924): Port[a002b410:0:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Gathered candidate: Cand[:3481569408:1:udp:2122260223:172.16.11.x:60964:local::0:PSHv:rXdB/YEynXHJfDjTU7OiVe15:1:0:0]
+(basic_port_allocator.cc:957): Port[a002b410:0:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Port ready.
+(stun_port.cc:439): Port[a002b410:0:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Starting STUN host lookup for stun.l.google.com:19302
+(basic_port_allocator.cc:1353): Net[eth0:172.16.11.x/24:Ethernet:id=1]: Allocation Phase=Udp
+(port.cc:186): Port[a002ce90::1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Port created with network cost 0
+(basic_port_allocator.cc:1424): AllocationSequence: UDPPort will be handling the STUN candidate generation.
+(basic_port_allocator.cc:885): Adding allocated port for 1
+(basic_port_allocator.cc:906): Port[a002ce90:1:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Added port to allocator
+(basic_port_allocator.cc:924): Port[a002ce90:1:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Gathered candidate: Cand[:3481569408:1:udp:2122260223:172.16.11.x:50219:local::0:PSHv:rXdB/YEynXHJfDjTU7OiVe15:1:0:0]
+(basic_port_allocator.cc:957): Port[a002ce90:1:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Port ready.
+(stun_port.cc:439): Port[a002ce90:1:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Starting STUN host lookup for stun.l.google.com:19302
+(thread.cc:787): Waiting for the thread to join, but blocking calls have been disallowed
+(thread.cc:787): Waiting for the thread to join, but blocking calls have been disallowed
+(basic_port_allocator.cc:924): Port[a002ce90:1:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Gathered candidate: Cand[:1725630293:1:udp:1686052607:20.83.237.x:50219:stun:172.16.11.6:50219:PSHv:rXdB/YEynXHJfDjTU7OiVe15:1:0:0]
+(basic_port_allocator.cc:1065): Port[a002ce90:1:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Port completed gathering candidates.
+(basic_port_allocator.cc:924): Port[a002b410:0:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Gathered candidate: Cand[:1725630293:1:udp:1686052607:20.83.237.x:60964:stun:172.16.11.6:60964:PSHv:rXdB/YEynXHJfDjTU7OiVe15:1:0:0]
+(basic_port_allocator.cc:1065): Port[a002b410:0:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Port completed gathering candidates.
+(basic_port_allocator.cc:1353): Net[eth0:172.16.11.x/24:Ethernet:id=1]: Allocation Phase=Relay
+(basic_port_allocator.cc:1353): Net[eth0:172.16.11.x/24:Ethernet:id=1]: Allocation Phase=Relay
+(basic_port_allocator.cc:1353): Net[eth0:172.16.11.x/24:Ethernet:id=1]: Allocation Phase=Tcp
+(port.cc:186): Port[a002ff70::1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Port created with network cost 0
+(basic_port_allocator.cc:885): Adding allocated port for 0
+(basic_port_allocator.cc:906): Port[a002ff70:0:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Added port to allocator
+(basic_port_allocator.cc:924): Port[a002ff70:0:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Gathered candidate: Cand[:2164749424:1:tcp:1518280447:172.16.11.x:39799:local::0:PSHv:rXdB/YEynXHJfDjTU7OiVe15:1:0:0]
+(basic_port_allocator.cc:957): Port[a002ff70:0:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Port ready.
+(basic_port_allocator.cc:1065): Port[a002ff70:0:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Port completed gathering candidates.
+(basic_port_allocator.cc:1140): All candidates gathered for 0:1:0
+(p2p_transport_channel.cc:933): P2PTransportChannel: 0, component 1 gathering complete
+(basic_port_allocator.cc:1353): Net[eth0:172.16.11.x/24:Ethernet:id=1]: Allocation Phase=Tcp
+(port.cc:186): Port[a00312c0::1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Port created with network cost 0
+(basic_port_allocator.cc:885): Adding allocated port for 1
+(basic_port_allocator.cc:906): Port[a00312c0:1:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Added port to allocator
+(basic_port_allocator.cc:924): Port[a00312c0:1:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Gathered candidate: Cand[:2164749424:1:tcp:1518280447:172.16.11.x:49661:local::0:PSHv:rXdB/YEynXHJfDjTU7OiVe15:1:0:0]
+(basic_port_allocator.cc:957): Port[a00312c0:1:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Port ready.
+(basic_port_allocator.cc:1065): Port[a00312c0:1:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Port completed gathering candidates.
+(basic_port_allocator.cc:1140): All candidates gathered for 1:1:0
+(p2p_transport_channel.cc:933): P2PTransportChannel: 1, component 1 gathering complete
+(field_trial.cc:140): Setting field trial string:WebRTC-KeepAbsSendTimeExtension/Enabled/
+(audio_processing_impl.cc:272): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+(webrtc_voice_engine.cc:206): WebRtcVoiceEngine::WebRtcVoiceEngine
+(webrtc_video_engine.cc:572): WebRtcVideoEngine::WebRtcVideoEngine()
+(webrtc_voice_engine.cc:228): WebRtcVoiceEngine::Init
+(webrtc_voice_engine.cc:315): WebRtcVoiceEngine::ApplyOptions: AudioOptions {aec: 1, agc: 1, ns: 1, hf: 1, swap: 0, audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, typing: 1, experimental_agc: 0, experimental_ns: 0, residual_echo_detector: 1, }
+(webrtc_voice_engine.cc:431): Stereo swapping enabled? 0
+(webrtc_voice_engine.cc:436): NetEq capacity is 200
+(webrtc_voice_engine.cc:442): NetEq fast mode? 0
+(webrtc_voice_engine.cc:448): NetEq minimum delay is 0
+(webrtc_voice_engine.cc:454): NetEq handle reordered packets? 0
+(webrtc_voice_engine.cc:474): Experimental ns is enabled? 0
+(webrtc_voice_engine.cc:525): NS set to 1
+(webrtc_voice_engine.cc:529): Typing detection is enabled? 1
+(audio_processing_impl.cc:526): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: {maximum_internal_processing_rate: 48000, multi_channel_render: 0, , multi_channel_capture: 0}, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 1 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: Rms, use_saturation_protector: 1, extra_saturation_margin_db: 2 } }, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 } }
+(agc_manager_direct.cc:69): [agc] GetMinMicLevel
+(agc_manager_direct.cc:73): [agc] Using default min mic level: 12
+(rtc_event_log_impl.cc:43): Creating legacy encoder for RTC event log.
+(peer_connection_factory.cc:391): Using default network controller factory
+(bitrate_prober.cc:69): Bandwidth probing enabled, set to inactive
+(paced_sender.cc:176): ProcessThreadAttached 0x50071630
+(cpu_info.cc:53): Available number of cores: 16
+(aimd_rate_control.cc:113): Using aimd rate control with back off factor 0.85
+(remote_bitrate_estimator_single_stream.cc:72): RemoteBitrateEstimatorSingleStream: Instantiating.
+(remote_estimator_proxy.cc:56): Maximum interval between transport feedback RTCP messages (ms): 250
+(peer_connection.cc:1610): Adding audio transceiver in response to a call to AddTrack.
+(openssl_identity.cc:43): Making key pair
+(peer_connection.cc:1610): Adding video transceiver in response to a call to AddTrack.
+(openssl_identity.cc:91): Returning key pair
+(openssl_certificate.cc:59): Making certificate for WebRTC
+(openssl_certificate.cc:109): Returning certificate
+(used_ids.h:55): Duplicate id found. Reassigning from 102 to 127
+(used_ids.h:55): Duplicate id found. Reassigning from 104 to 125
+(used_ids.h:55): Duplicate id found. Reassigning from 106 to 124
+(used_ids.h:55): Duplicate id found. Reassigning from 103 to 123
+(used_ids.h:55): Duplicate id found. Reassigning from 105 to 122
+(used_ids.h:55): Duplicate id found. Reassigning from 1 to 14
+(used_ids.h:55): Duplicate id found. Reassigning from 3 to 13
+(used_ids.h:55): Duplicate id found. Reassigning from 5 to 12
+(used_ids.h:55): Duplicate id found. Reassigning from 6 to 11
+(p2p_transport_channel.cc:526): Set backup connection ping interval to 25000 milliseconds.
+(p2p_transport_channel.cc:535): Set ICE receiving timeout to 2500 milliseconds
+(p2p_transport_channel.cc:542): Set ping most likely connection to 0
+(p2p_transport_channel.cc:549): Set stable_writable_connection_ping_interval to 2500
+(p2p_transport_channel.cc:562): Set presume writable when fully relayed to 0
+(p2p_transport_channel.cc:580): Set regather_on_failed_networks_interval to 300000
+(p2p_transport_channel.cc:587): Set receiving_switching_delay to 1000
+(jsep_transport_controller.cc:1215): Creating DtlsSrtpTransport.
+(dtls_srtp_transport.cc:62): Setting RTCP Transport on 0 transport 0
+(dtls_srtp_transport.cc:67): Setting RTP Transport on 0 transport 580037e0
+(p2p_transport_channel.cc:526): Set backup connection ping interval to 25000 milliseconds.
+(p2p_transport_channel.cc:535): Set ICE receiving timeout to 2500 milliseconds
+(p2p_transport_channel.cc:542): Set ping most likely connection to 0
+(p2p_transport_channel.cc:549): Set stable_writable_connection_ping_interval to 2500
+(p2p_transport_channel.cc:562): Set presume writable when fully relayed to 0
+(p2p_transport_channel.cc:580): Set regather_on_failed_networks_interval to 300000
+(p2p_transport_channel.cc:587): Set receiving_switching_delay to 1000
+(jsep_transport_controller.cc:1215): Creating DtlsSrtpTransport.
+(dtls_srtp_transport.cc:62): Setting RTCP Transport on 1 transport 0
+(dtls_srtp_transport.cc:67): Setting RTP Transport on 1 transport 580061e0
+(p2p_transport_channel.cc:460): Set ICE ufrag: 93Y3 pwd: rVeyMlEWgpYz/QIgbU/N0fnb on transport 0
+(p2p_transport_channel.cc:460): Set ICE ufrag: 93Y3 pwd: rVeyMlEWgpYz/QIgbU/N0fnb on transport 1
+(webrtc_voice_engine.cc:1495): Setting voice channel options: AudioOptions {audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
+(webrtc_voice_engine.cc:315): WebRtcVoiceEngine::ApplyOptions: AudioOptions {audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
+(webrtc_voice_engine.cc:436): NetEq capacity is 200
+(webrtc_voice_engine.cc:442): NetEq fast mode? 0
+(webrtc_voice_engine.cc:448): NetEq minimum delay is 0
+(webrtc_voice_engine.cc:454): NetEq handle reordered packets? 0
+(webrtc_voice_engine.cc:474): Experimental ns is enabled? 0
+(audio_processing_impl.cc:526): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: {maximum_internal_processing_rate: 48000, multi_channel_render: 0, , multi_channel_capture: 0}, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 1 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: Rms, use_saturation_protector: 1, extra_saturation_margin_db: 2 } }, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 } }
+(webrtc_voice_engine.cc:1513): Set voice channel options. Current options: AudioOptions {audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
+(channel.cc:145): Created channel for 0
+(webrtc_video_engine.cc:585): CreateMediaChannel. Options: VideoOptions {}
+(channel.cc:145): Created channel for 1
+(peer_connection.cc:4794): Session: 1560111581860736793 Old state: kStable New state: kHaveLocalOffer
+(channel.cc:824): Setting local voice description
+(webrtc_voice_engine.cc:1356): WebRtcVoiceMediaChannel::SetRecvParameters: {codecs: [AudioCodec[111:opus:48000:0:2], AudioCodec[103:ISAC:16000:0:1], AudioCodec[104:ISAC:32000:0:1], AudioCodec[9:G722:8000:0:1], AudioCodec[102:ILBC:8000:0:1], AudioCodec[0:PCMU:8000:0:1], AudioCodec[8:PCMA:8000:0:1], AudioCodec[106:CN:32000:0:1], AudioCodec[105:CN:16000:0:1], AudioCodec[13:CN:8000:0:1], AudioCodec[110:telephone-event:48000:0:1], AudioCodec[112:telephone-event:32000:0:1], AudioCodec[113:telephone-event:16000:0:1], AudioCodec[126:telephone-event:8000:0:1]], extensions: [{uri: urn:ietf:params:rtp-hdrext:ssrc-audio-level, id: 1}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}]}
+(webrtc_voice_engine.cc:1523): Setting receive voice codecs.
+(webrtc_voice_engine.cc:1794): AddSendStream: {id:audio_label;ssrcs:[3230054379];ssrc_groups:;cname:oKHRFI62sJQkbFA6;stream_ids:stream_id;}
+(delay_manager.cc:73): Delay histogram config: quantile=1041529569 forget_factor=32745 start_forget_weight=2
+(decision_logic.cc:55): NetEq decision logic settings: estimate_dtx_delay=0 time_stretch_cn=0 target_level_window_ms=100
+(neteq_impl.cc:144): NetEq config: sample_rate_hz=16000, enable_post_decode_vad=true, max_packets_in_buffer=200, min_delay_ms=0, enable_fast_accelerate=false, enable_muted_state=false, enable_rtx_handling=false
+(audio_coding_module.cc:224): Created
+(audio_send_stream.cc:160): AudioSendStream: 3230054379
+(audio_send_stream.cc:227): AudioSendStream::ConfigureStream: {rtp: {ssrc: 3230054379, extmap-allow-mixed: false, extensions: [], c_name: oKHRFI62sJQkbFA6}, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: -1, max_bitrate_bps: -1, send_codec_spec: <unset>}
+(channel.cc:635): Add send stream ssrc: 3230054379
+(channel.cc:816): Changing voice state, recv=0 send=0
+(channel.cc:978): Setting local video description
+(webrtc_video_engine.cc:1160): SetRecvParameters: {codecs: [VideoCodec[96:VP8], VideoCodec[97:rtx], VideoCodec[98:VP9], VideoCodec[99:rtx], VideoCodec[100:VP9], VideoCodec[101:rtx], VideoCodec[127:AV1X], VideoCodec[123:rtx], VideoCodec[125:red], VideoCodec[122:rtx], VideoCodec[124:ulpfec]], extensions: [{uri: urn:ietf:params:rtp-hdrext:toffset, id: 14}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 12}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 11}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07, id: 8}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 9}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}]}
+(webrtc_video_engine.cc:1176): Changing recv codecs from {VideoCodec[96:VP8], VideoCodec[98:VP9], VideoCodec[100:VP9], VideoCodec[102:AV1X]} to {VideoCodec[96:VP8], VideoCodec[98:VP9], VideoCodec[100:VP9], VideoCodec[127:AV1X]}
+(webrtc_video_engine.cc:1277): AddSendStream: {id:video_label;ssrcs:[1448162602,417219447];ssrc_groups:{semantics:FID;ssrcs:[1448162602,417219447]};cname:oKHRFI62sJQkbFA6;stream_ids:stream_id;}
+(webrtc_video_engine.cc:1324): SetLocalSsrc on all the receive streams because we added a send stream.
+(channel.cc:635): Add send stream ssrc: 1448162602
+(channel.cc:965): Changing video state, send=0
+(webrtc_voice_engine.cc:1495): Setting voice channel options: AudioOptions {}
+(webrtc_voice_engine.cc:315): WebRtcVoiceEngine::ApplyOptions: AudioOptions {audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
+(webrtc_voice_engine.cc:436): NetEq capacity is 200
+(webrtc_voice_engine.cc:442): NetEq fast mode? 0
+(webrtc_voice_engine.cc:448): NetEq minimum delay is 0
+(webrtc_voice_engine.cc:454): NetEq handle reordered packets? 0
+(webrtc_voice_engine.cc:474): Experimental ns is enabled? 0
+(audio_processing_impl.cc:526): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: {maximum_internal_processing_rate: 48000, multi_channel_render: 0, , multi_channel_capture: 0}, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 1 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: Rms, use_saturation_protector: 1, extra_saturation_margin_db: 2 } }, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 } }
+(webrtc_voice_engine.cc:1513): Set voice channel options. Current options: AudioOptions {audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
+(webrtc_video_engine.cc:1236): SetVideoSend (ssrc= 1448162602, options: VideoOptions {is_screencast : false, }, source = (source))
+(basic_port_allocator.cc:375): Start getting ports with turn_port_prune_policy 0
+(basic_port_allocator.cc:375): Start getting ports with turn_port_prune_policy 0
+(conductor.cc:68): OnSuccess
+(basic_port_allocator.cc:111): Filtered out ignored networks:
+(basic_port_allocator.cc:113): Net[lo:0:0:0:x:x:x:x:x/128:Loopback:id=3]
+(basic_port_allocator.cc:113): Net[lo:127.0.0.x/8:Loopback:id=2]
+(basic_port_allocator.cc:861): Network manager has started
+(basic_port_allocator.cc:111): Filtered out ignored networks:
+(basic_port_allocator.cc:113): Net[lo:0:0:0:x:x:x:x:x/128:Loopback:id=3]
+(basic_port_allocator.cc:113): Net[lo:127.0.0.x/8:Loopback:id=2]
+(basic_port_allocator.cc:861): Network manager has started
+(basic_port_allocator.cc:111): Filtered out ignored networks:
+(basic_port_allocator.cc:113): Net[lo:0:0:0:x:x:x:x:x/128:Loopback:id=3]
+(basic_port_allocator.cc:113): Net[lo:127.0.0.x/8:Loopback:id=2]
+(basic_port_allocator.cc:776): Allocate ports on 1 networks
+(basic_port_allocator.cc:111): Filtered out ignored networks:
+(basic_port_allocator.cc:113): Net[lo:0:0:0:x:x:x:x:x/128:Loopback:id=3]
+(basic_port_allocator.cc:113): Net[lo:127.0.0.x/8:Loopback:id=2]
+(basic_port_allocator.cc:776): Allocate ports on 1 networks
+(basic_port_allocator.cc:1353): Net[eth0:172.16.11.x/24:Ethernet:id=1]: Allocation Phase=Udp
+(port.cc:186): Port[5802b410::1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Port created with network cost 0
+(basic_port_allocator.cc:1424): AllocationSequence: UDPPort will be handling the STUN candidate generation.
+(basic_port_allocator.cc:885): Adding allocated port for 0
+(basic_port_allocator.cc:906): Port[5802b410:0:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Added port to allocator
+(basic_port_allocator.cc:924): Port[5802b410:0:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Gathered candidate: Cand[:3481569408:1:udp:2122260223:172.16.11.x:59920:local::0:93Y3:rVeyMlEWgpYz/QIgbU/N0fnb:1:0:0]
+(basic_port_allocator.cc:957): Port[5802b410:0:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Port ready.
+(stun_port.cc:439): Port[5802b410:0:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Starting STUN host lookup for stun.l.google.com:19302
+(conductor.cc:320): OnIceCandidate 0
+(basic_port_allocator.cc:1353): Net[eth0:172.16.11.x/24:Ethernet:id=1]: Allocation Phase=Udp
+(port.cc:186): Port[5802ce90::1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Port created with network cost 0
+(basic_port_allocator.cc:1424): AllocationSequence: UDPPort will be handling the STUN candidate generation.
+(basic_port_allocator.cc:885): Adding allocated port for 1
+(basic_port_allocator.cc:906): Port[5802ce90:1:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Added port to allocator
+(basic_port_allocator.cc:924): Port[5802ce90:1:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Gathered candidate: Cand[:3481569408:1:udp:2122260223:172.16.11.x:33084:local::0:93Y3:rVeyMlEWgpYz/QIgbU/N0fnb:1:0:0]
+(basic_port_allocator.cc:957): Port[5802ce90:1:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Port ready.
+(stun_port.cc:439): Port[5802ce90:1:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Starting STUN host lookup for stun.l.google.com:19302
+(conductor.cc:320): OnIceCandidate 1
+(thread.cc:787): Waiting for the thread to join, but blocking calls have been disallowed
+(thread.cc:787): Waiting for the thread to join, but blocking calls have been disallowed
+(basic_port_allocator.cc:924): Port[5802ce90:1:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Gathered candidate: Cand[:1725630293:1:udp:1686052607:20.83.237.x:33084:stun:172.16.11.6:33084:93Y3:rVeyMlEWgpYz/QIgbU/N0fnb:1:0:0]
+(basic_port_allocator.cc:1065): Port[5802ce90:1:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Port completed gathering candidates.
+(conductor.cc:320): OnIceCandidate 1
+(basic_port_allocator.cc:924): Port[5802b410:0:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Gathered candidate: Cand[:1725630293:1:udp:1686052607:20.83.237.x:59920:stun:172.16.11.6:59920:93Y3:rVeyMlEWgpYz/QIgbU/N0fnb:1:0:0]
+(basic_port_allocator.cc:1065): Port[5802b410:0:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Port completed gathering candidates.
+(conductor.cc:320): OnIceCandidate 0
+(webrtc_sdp.cc:3316): Ignored line: a=rtcp:9 IN IP4 0.0.0.0
+(webrtc_sdp.cc:3316): Ignored line: a=rtcp:9 IN IP4 0.0.0.0
+(conductor.cc:565):  Received session description :{
+   "sdp" : "v=0\r\no=- 1001983186071747856 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1\r\na=msid-semantic: WMS stream_id\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 102 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:HgGc\r\na=ice-pwd:TkH3TTw8upOwUeSfq5pSPGtm\r\na=ice-options:trickle\r\na=fingerprint:sha-256 04:B6:E9:0E:C5:5B:3C:FF:09:32:01:FC:94:BC:97:73:B1:BF:EE:BB:E5:02:B0:72:FD:2F:A1:90:67:C1:2F:CD\r\na=setup:active\r\na=mid:0\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendrecv\r\na=msid:stream_id audio_label\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:102 ILBC/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\na=ssrc:969695178 cname:6CF3Haa3FsGBYtd3\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100 101 127 123 125 122 124\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:HgGc\r\na=ice-pwd:TkH3TTw8upOwUeSfq5pSPGtm\r\na=ice-options:trickle\r\na=fingerprint:sha-256 04:B6:E9:0E:C5:5B:3C:FF:09:32:01:FC:94:BC:97:73:B1:BF:EE:BB:E5:02:B0:72:FD:2F:A1:90:67:C1:2F:CD\r\na=setup:active\r\na=mid:1\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:12 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:11 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07\r\na=extmap:9 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendrecv\r\na=msid:stream_id video_label\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:100 VP9/90000\r\na=rtcp-fb:100 goog-remb\r\na=rtcp-fb:100 transport-cc\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 nack pli\r\na=fmtp:100 profile-id=2\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\na=rtpmap:127 AV1X/90000\r\na=rtcp-fb:127 goog-remb\r\na=rtcp-fb:127 transport-cc\r\na=rtcp-fb:127 ccm fir\r\na=rtcp-fb:127 nack\r\na=rtcp-fb:127 nack pli\r\na=rtpmap:123 rtx/90000\r\na=fmtp:123 apt=127\r\na=rtpmap:125 red/90000\r\na=rtpmap:122 rtx/90000\r\na=fmtp:122 apt=125\r\na=rtpmap:124 ulpfec/90000\r\na=ssrc-group:FID 852632439 1257243719\r\na=ssrc:852632439 cname:6CF3Haa3FsGBYtd3\r\na=ssrc:1257243719 cname:6CF3Haa3FsGBYtd3\r\n",
+   "type" : "answer"
+}
+
+(dtls_srtp_transport.cc:62): Setting RTCP Transport on 0 transport 0
+(dtls_srtp_transport.cc:67): Setting RTP Transport on 0 transport 580037e0
+(p2p_transport_channel.cc:471): Received remote ICE parameters: ufrag=HgGc, renomination disabled
+(dtls_transport.cc:377): DtlsTransport[0|1|__]: DTLS setup complete.
+(channel.cc:507): Channel enabled
+(port.cc:382): Received STUN BINDING request id=3965654f5551696d6a49386e from unknown address 172.16.11.x:59757
+(connection.cc:312): Conn[58006b50:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:gOsRTW+1:1:0:local:udp:172.16.11.x:59920->g1uFNeN4:1:1853824767:prflx:udp:172.16.11.x:59757|C--W|-|0|0|7962116751024340479|-]: Connection created
+(p2p_transport_channel.cc:1071): Adding connection from peer reflexive candidate: Cand[:1205688653:1:udp:1853824767:172.16.11.x:59757:prflx::0:HgGc:TkH3TTw8upOwUeSfq5pSPGtm:1:0:0]
+(connection.cc:723): Conn[58006b50:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:gOsRTW+1:1:0:local:udp:172.16.11.x:59920->g1uFNeN4:1:1853824767:prflx:udp:172.16.11.x:59757|CR-W|-|0|0|7962116751024340479|-]: Sent STUN BINDING response, to=172.16.11.x:59757, id=3965654f5551696d6a49386e
+(p2p_transport_channel.cc:1817): Channel[0|1|R_]: Transport channel state changed from 0 to 2
+(jsep_transport_controller.cc:1421): 0 Transport 1 state changed. Check if state is complete.
+(jsep_transport_controller.cc:1421): 0 Transport 1 state changed. Check if state is complete.
+(p2p_transport_channel.cc:1616): Channel[0|1|R_]: Have a pingable connection for the first time; starting to ping.
+(basic_ice_controller.cc:229): Selecting connection for triggered check: Conn[58006b50:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:gOsRTW+1:1:0:local:udp:172.16.11.x:59920->g1uFNeN4:1:1853824767:prflx:udp:172.16.11.x:59757|CR-W|-|0|0|7962116751024340479|-]
+(channel.cc:816): Changing voice state, recv=1 send=0
+(connection.cc:1167): Conn[58006b50:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:gOsRTW+1:1:0:local:udp:172.16.11.x:59920->g1uFNeN4:1:1853824767:prflx:udp:172.16.11.x:59757|CR-W|-|0|0|7962116751024340479|-]: Sent STUN BINDING request, id=4b2b556f7856722b67596253, use_candidate=1, nomination=0
+(channel.cc:507): Channel enabled
+(channel.cc:965): Changing video state, send=0
+(peer_connection.cc:4794): Session: 1560111581860736793 Old state: kHaveLocalOffer New state: kStable
+(channel.cc:881): Setting remote voice description
+(webrtc_voice_engine.cc:1311): WebRtcVoiceMediaChannel::SetSendParameters: {codecs: [AudioCodec[111:opus:48000:0:2], AudioCodec[103:ISAC:16000:0:1], AudioCodec[104:ISAC:32000:0:1], AudioCodec[9:G722:8000:0:1], AudioCodec[102:ILBC:8000:0:1], AudioCodec[0:PCMU:8000:0:1], AudioCodec[8:PCMA:8000:0:1], AudioCodec[106:CN:32000:0:1], AudioCodec[105:CN:16000:0:1], AudioCodec[13:CN:8000:0:1], AudioCodec[110:telephone-event:48000:0:1], AudioCodec[112:telephone-event:32000:0:1], AudioCodec[113:telephone-event:16000:0:1], AudioCodec[126:telephone-event:8000:0:1]], extensions: [{uri: urn:ietf:params:rtp-hdrext:ssrc-audio-level, id: 1}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}], extmap-allow-mixed: false, max_bandwidth_bps: -1, mid: 0, options: AudioOptions {}}
+(audio_send_stream.cc:227): AudioSendStream::ConfigureStream: {rtp: {ssrc: 3230054379, extmap-allow-mixed: false, extensions: [], c_name: oKHRFI62sJQkbFA6}, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: 32000, max_bitrate_bps: 32000, send_codec_spec: {nack_enabled: false, transport_cc_enabled: true, cng_payload_type: <unset>, payload_type: 111, format: {name: opus, clockrate_hz: 48000, num_channels: 2, parameters: {minptime: 10, useinbandfec: 1}}}}
+(dtls_transport.cc:577): DtlsTransport[0|1|__]: Packet received before DTLS started.
+(dtls_transport.cc:586): DtlsTransport[0|1|__]: Caching DTLS ClientHello packet until DTLS is started.
+(webrtc_voice_engine.cc:1712): Recreate all the receive streams because the send codec has changed.
+(audio_send_stream.cc:227): AudioSendStream::ConfigureStream: {rtp: {ssrc: 3230054379, extmap-allow-mixed: false, extensions: [{uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}, {uri: urn:ietf:params:rtp-hdrext:ssrc-audio-level, id: 1}], c_name: oKHRFI62sJQkbFA6}, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: 32000, max_bitrate_bps: 32000, send_codec_spec: {nack_enabled: false, transport_cc_enabled: true, cng_payload_type: <unset>, payload_type: 111, format: {name: opus, clockrate_hz: 48000, num_channels: 2, parameters: {minptime: 10, useinbandfec: 1}}}}
+(connection.cc:1082): Conn[58006b50:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:gOsRTW+1:1:0:local:udp:172.16.11.x:59920->g1uFNeN4:1:1853824767:prflx:udp:172.16.11.x:59757|CR-I|-|0|0|7962116751024340479|-]: Received STUN BINDING response, id=4b2b556f7856722b67596253, code=0, rtt=0, pings_since_last_response=4b2b556f7856722b67596253 
+(audio_send_stream.cc:227): AudioSendStream::ConfigureStream: {rtp: {ssrc: 3230054379, extmap-allow-mixed: false, extensions: [{uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}, {uri: urn:ietf:params:rtp-hdrext:ssrc-audio-level, id: 1}], c_name: oKHRFI62sJQkbFA6}, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: 32000, max_bitrate_bps: 32000, send_codec_spec: {nack_enabled: false, transport_cc_enabled: true, cng_payload_type: <unset>, payload_type: 111, format: {name: opus, clockrate_hz: 48000, num_channels: 2, parameters: {minptime: 10, useinbandfec: 1}}}}
+(basic_port_allocator.cc:1140): All candidates gathered for 0:1:0
+(p2p_transport_channel.cc:933): P2PTransportChannel: 0, component 1 gathering complete
+(webrtc_voice_engine.cc:2169): WebRtcVoiceMediaChannel::SetMaxSendBitrate.
+(webrtc_voice_engine.cc:1495): Setting voice channel options: AudioOptions {}
+(p2p_transport_channel.cc:275): Switching selected connection due to: candidate pair state changed
+(webrtc_voice_engine.cc:315): WebRtcVoiceEngine::ApplyOptions: AudioOptions {audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
+(webrtc_voice_engine.cc:436): NetEq capacity is 200
+(webrtc_voice_engine.cc:442): NetEq fast mode? 0
+(webrtc_voice_engine.cc:448): NetEq minimum delay is 0
+(webrtc_voice_engine.cc:454): NetEq handle reordered packets? 0
+(webrtc_voice_engine.cc:474): Experimental ns is enabled? 0
+(audio_processing_impl.cc:526): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: {maximum_internal_processing_rate: 48000, multi_channel_render: 0, , multi_channel_capture: 0}, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 1 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: Rms, use_saturation_protector: 1, extra_saturation_margin_db: 2 } }, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 } }
+(p2p_transport_channel.cc:1731): Channel[0|1|R_]: New selected connection: Conn[58006b50:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:gOsRTW+1:1:0:local:udp:172.16.11.x:59920->g1uFNeN4:1:1853824767:prflx:udp:172.16.11.x:59757|CRWS|S|0|0|7962116751024340479|0]
+(webrtc_voice_engine.cc:1513): Set voice channel options. Current options: AudioOptions {audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
+(channel.cc:352): Network route was changed.
+(channel.cc:352): Network route was changed.
+(webrtc_voice_engine.cc:1859): AddRecvStream: {id:audio_label;ssrcs:[969695178];ssrc_groups:;cname:6CF3Haa3FsGBYtd3;stream_ids:stream_id;}
+(dtls_transport.cc:828): DtlsTransport[0|1|__]: configuring DTLS handshake timeout 50 based on ICE RTT 0
+(openssl_stream_adapter.cc:793): BeginSSL with peer.
+(delay_manager.cc:73): Delay histogram config: quantile=1041529569 forget_factor=32745 start_forget_weight=2
+(decision_logic.cc:55): NetEq decision logic settings: estimate_dtx_delay=0 time_stretch_cn=0 target_level_window_ms=100
+(neteq_impl.cc:144): NetEq config: sample_rate_hz=16000, enable_post_decode_vad=true, max_packets_in_buffer=200, min_delay_ms=0, enable_fast_accelerate=false, enable_muted_state=true, enable_rtx_handling=false
+(dtls_transport.cc:733): DtlsTransport[0|1|__]: DtlsTransport: Started DTLS handshake
+(srtp_transport.cc:366): The params in SRTP transport are reset.
+(dtls_transport.cc:739): DtlsTransport[0|1|__]: Handling cached DTLS ClientHello packet.
+(audio_receive_stream.cc:123): AudioReceiveStream: 969695178
+(audio_receive_stream.cc:380): AudioReceiveStream::ConfigureStream: {rtp: {remote_ssrc: 969695178, local_ssrc: 3230054379, transport_cc: on, nack: {rtp_history_ms: 0}, extensions: [{uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}, {uri: urn:ietf:params:rtp-hdrext:ssrc-audio-level, id: 1}]}, rtcp_send_transport: (Transport), sync_group: stream_id}
+(channel.cc:681): Add remote ssrc: 969695178
+(jsep_transport_controller.cc:1421): 0 Transport 1 state changed. Check if state is complete.
+(channel.cc:816): Changing voice state, recv=1 send=0
+(rtp_transport_controller_send.cc:294): Network route changed on transport 0: new_route = [ connected: 1 local: [ 1/1 Ethernet turn: 0 ] remote: [ 1/1 Ethernet turn: 0 ] packet_overhead_bytes: 28 ]
+(channel.cc:1064): Setting remote video description
+(webrtc_video_engine.cc:808): SetSendParameters: {codecs: [VideoCodec[96:VP8], VideoCodec[97:rtx], VideoCodec[98:VP9], VideoCodec[99:rtx], VideoCodec[100:VP9], VideoCodec[101:rtx], VideoCodec[127:AV1X], VideoCodec[123:rtx], VideoCodec[125:red], VideoCodec[122:rtx], VideoCodec[124:ulpfec]], conference_mode: no, extensions: [{uri: urn:ietf:params:rtp-hdrext:toffset, id: 14}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 12}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 11}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07, id: 8}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 9}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}], extmap-allow-mixed: false, max_bandwidth_bps: -1, mid: 1}
+(webrtc_video_engine.cc:751): WebRTC-FlexFEC-03 field trial is not enabled.
+(webrtc_video_engine.cc:816): Negotiated codec: VideoCodec[96:VP8]
+(webrtc_video_engine.cc:816): Negotiated codec: VideoCodec[98:VP9]
+(webrtc_video_engine.cc:816): Negotiated codec: VideoCodec[100:VP9]
+(webrtc_video_engine.cc:816): Negotiated codec: VideoCodec[127:AV1X]
+(webrtc_video_engine.cc:926): Set codec: VideoCodec[96:VP8]
+(webrtc_video_engine.cc:2146): RecreateWebRtcStream (send) because of SetCodec.
+(alr_experiment.cc:79): Using ALR experiment settings: pacing factor: 1, max pacer queue length: 2875, ALR bandwidth usage percent: 80, ALR start budget level percent: 40, ALR end budget level percent: -60, ALR experiment group ID: 3
+(video_stream_encoder.cc:1929): Automatic animation detection experiment is disabled.
+(balanced_degradation_settings.cc:96): Unsupported size, value ignored.
+(balanced_degradation_settings.cc:96): Unsupported size, value ignored.
+(openssl_stream_adapter.cc:1074): Accepted peer certificate.
+(video_send_stream_impl.cc:231): VideoSendStreamInternal: {encoder_settings: { experiment_cpu_load_estimator: off}}, rtp: {ssrcs: [1448162602], rids: [], mid: '1', rtcp_mode: RtcpMode::kReducedSize, max_packet_size: 1200, extmap-allow-mixed: false, extensions: [{uri: http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07, id: 8}, {uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 9}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 12}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 11}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}], lntf: {enabled: false}, nack: {rtp_history_ms: 1000}, ulpfec: {ulpfec_payload_type: 124, red_payload_type: 125, red_rtx_payload_type: 122}, payload_name: VP8, payload_type: 96, raw_payload: false, flexfec: {payload_type: -1, ssrc: 0, protected_media_ssrcs: []}, rtx: {ssrcs: [417219447], payload_type: 97}, c_name: oKHRFI62sJQkbFA6}, rtcp_report_interval_ms: 1000, send_transport: (Transport), render_delay_ms: 0, target_delay_ms: 0, suspend_below_min_bitrate: off}
+(video_stream_encoder.cc:419): ConfigureEncoder requested.
+(video_send_stream.cc:177): VideoSendStream::Stop
+(webrtc_video_engine.cc:980): SetFeedbackOptions on all the receive streams because the send codec or RTCP mode has changed.
+(video_send_stream_impl.cc:386): VideoSendStream::Stop
+(webrtc_video_engine.cc:1387): AddRecvStream: {id:video_label;ssrcs:[852632439,1257243719];ssrc_groups:{semantics:FID;ssrcs:[852632439,1257243719]};cname:6CF3Haa3FsGBYtd3;stream_ids:stream_id;}
+(dtls_transport.cc:661): DtlsTransport[0|1|__]: DTLS handshake complete.
+(jsep_transport_controller.cc:1344):  Transport 0 writability changed to 1.
+(dtls_srtp_transport.cc:220): Extracting keys from transport: 0
+(video_receive_stream2.cc:228): VideoReceiveStream2: {decoders: [{payload_type: 96, payload_name: VP8, codec_params: {}}, {payload_type: 98, payload_name: VP9, codec_params: {profile-id: 0}}, {payload_type: 100, payload_name: VP9, codec_params: {profile-id: 2}}, {payload_type: 127, payload_name: AV1X, codec_params: {}}], rtp: {remote_ssrc: 852632439, local_ssrc: 1448162602, rtcp_mode: RtcpMode::kReducedSize, rtcp_xr: {receiver_reference_time_report: off}, transport_cc: on, lntf: {enabled: false}, nack: {rtp_history_ms: 1000}, ulpfec_payload_type: 124, red_type: 125, rtx_ssrc: 1257243719, rtx_payload_types: {97 (pt) -> 96 (apt), 99 (pt) -> 98 (apt), 101 (pt) -> 100 (apt), 122 (pt) -> 125 (apt), 123 (pt) -> 127 (apt), }, raw_payload_types: {}, extensions: [{uri: http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07, id: 8}, {uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 9}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 12}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 11}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}, {uri: urn:ietf:params:rtp-hdrext:toffset, id: 14}]}, renderer: (renderer), render_delay_ms: 10, sync_group: stream_id, target_delay_ms: 0}
+(channel.cc:681): Add remote ssrc: 852632439
+(srtp_transport.cc:311): SRTP activated with negotiated parameters: send cipher_suite 1 recv cipher_suite 1
+(channel.cc:537): Channel writable (0) for the first time
+(channel.cc:537): Channel writable (1) for the first time
+(video_send_stream.cc:148): UpdateActiveSimulcastLayers: {1}
+(bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 0 bps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 10000 kbps
+(channel.cc:965): Changing video state, send=1
+(call.cc:1056): UpdateAggregateNetworkState: aggregate_state change to up
+(peer_connection.cc:4698): Changing IceConnectionState 0 => 1
+(peer_connection.cc:5950): Non-rejected SCTP m= section is needed to get the SSL Role of the SCTP transport.
+(rtp_transport_controller_send.cc:585): Creating fallback congestion controller
+(peer_connection.cc:3254): Processing the MSIDs for MID=0 (streams=[stream_id]).
+(webrtc_voice_engine.cc:315): WebRtcVoiceEngine::ApplyOptions: AudioOptions {audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
+(peer_connection.cc:3265): Processing the addition of a remote track for MID=0.
+(webrtc_voice_engine.cc:436): NetEq capacity is 200
+(webrtc_voice_engine.cc:442): NetEq fast mode? 0
+(webrtc_voice_engine.cc:448): NetEq minimum delay is 0
+(rtp_transceiver.cc:259): Changing transceiver (MID=0) current direction from <not set> to kSendRecv.
+(alr_experiment.cc:79): Using ALR experiment settings: pacing factor: 1, max pacer queue length: 2875, ALR bandwidth usage percent: 80, ALR start budget level percent: 40, ALR end budget level percent: -60, ALR experiment group ID: 3
+(webrtc_voice_engine.cc:454): NetEq handle reordered packets? 0
+(webrtc_voice_engine.cc:474): Experimental ns is enabled? 0
+(audio_processing_impl.cc:526): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: {maximum_internal_processing_rate: 48000, multi_channel_render: 0, , multi_channel_capture: 0}, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 1 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: Rms, use_saturation_protector: 1, extra_saturation_margin_db: 2 } }, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 } }
+(trendline_estimator.cc:185): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:20 and no network state predictor
+(trendline_estimator.cc:185): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:20 and no network state predictor
+(aimd_rate_control.cc:113): Using aimd rate control with back off factor 0.85
+(delay_based_bwe.cc:120): Initialized DelayBasedBwe with small packet filtering smoothing:0.1,fraction_large:1,large:0 bytes,small:0 bytes, separate audio overuse detectionenabled:false,packet_threshold:10,time_threshold:1 s and alr limited backoff disabled
+(delay_based_bwe.cc:356): BWE Setting start bitrate to: 300 kbps
+(probe_controller.cc:280): Measured bitrate: 300000 Minimum to probe further: 1260000
+(bitrate_prober.cc:112): Probe cluster (bitrate:min bytes:min packets): (900000:1688:5)
+(bitrate_prober.cc:112): Probe cluster (bitrate:min bytes:min packets): (1800000:3375:5)
+(bitrate_allocator.cc:394): Current BWE 300000
+(bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 32 kbps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 10032 kbps
+(video_stream_encoder.cc:1699): Video suspend state changed to: not suspended
+(channel.cc:816): Changing voice state, recv=1 send=1
+(video_send_stream.cc:148): UpdateActiveSimulcastLayers: {1}
+(channel.cc:965): Changing video state, send=1
+(webrtc_voice_engine.cc:1959): SetOutputVolume() to 1 for recv stream with ssrc 969695178
+(peer_connection.cc:3254): Processing the MSIDs for MID=1 (streams=[stream_id]).
+(peer_connection.cc:3265): Processing the addition of a remote track for MID=1.
+(rtp_transceiver.cc:259): Changing transceiver (MID=1) current direction from <not set> to kSendRecv.
+(webrtc_video_engine.cc:3335): Absent receive stream; ignoring clearing encoded frame sink for ssrc 0
+(webrtc_video_engine.cc:1532): SetSink: ssrc:852632439 (ptr)
+(conductor.cc:308): OnAddTrack d61a6ba7-d018-4162-8f3c-6bce51f368ee
+(conductor.cc:308): OnAddTrack 3a99a84d-b6af-42e9-8af7-e05a749e2766
+(peer_connection.cc:4717): Changing standardized IceConnectionState 0 => 1
+(peer_connection.cc:4717): Changing standardized IceConnectionState 1 => 2
+(peer_connection.cc:6328): Changing to ICE completed state because all transports are complete.
+(peer_connection.cc:4698): Changing IceConnectionState 1 => 2
+(peer_connection.cc:4698): Changing IceConnectionState 2 => 3
+(peer_connection.cc:4717): Changing standardized IceConnectionState 2 => 3
+(conductor.cc:68): OnSuccess
+(conductor.cc:597):  Received candidate :{
+   "candidate" : "candidate:3481569408 1 udp 2122260223 172.16.11.6 59757 typ host generation 0 ufrag HgGc network-id 1",
+   "sdpMLineIndex" : 0,
+   "sdpMid" : "0"
+}
+
+(rtp_sender_audio.cc:309): First audio RTP packet sent to pacer
+(frame_generator.cc:254): FRAME READ: 218354069790
+(video_stream_encoder.cc:1070): Video frame parameters changed: dimensions=704x576, texture=0.
+(video_stream_encoder.cc:609): ReconfigureEncoder:
+Simulcast streams:
+0: 704x576 fps: 60 min_kbps: 30 target_kbps: 2000 max_kbps: 2000 max_fps: 60 max_qp: 56 num_tl: 1 active: true
+
+(quality_scaler.cc:284): QP thresholds: low: 29, high: 95
+(video_stream_encoder.cc:1211): Encoder settings changed from EncoderInfo { ScalingSettings { min_pixels_per_frame = 57600 }, requested_resolution_alignment = 1, supports_native_handle = 0, implementation_name = 'unknown', has_trusted_rate_controller = 0, is_hardware_accelerated = 1, has_internal_source = 0, fps_allocation = [[ 1] ], resolution_bitrate_limits = [] , supports_simulcast = 0} to EncoderInfo { ScalingSettings { Thresholds { low = 29, high = 95}, min_pixels_per_frame = 57600 }, requested_resolution_alignment = 1, supports_native_handle = 0, implementation_name = 'libvpx', has_trusted_rate_controller = 0, is_hardware_accelerated = 0, has_internal_source = 0, fps_allocation = [[ 1] ], resolution_bitrate_limits = [] , supports_simulcast = 1}
+(bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 62 kbps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 2032 kbps
+(rtp_sender_video.cc:616): Sent first RTP packet of the first video frame (pre-pacer)
+(rtp_sender_video.cc:620): Sent last RTP packet of the first video frame (pre-pacer)
+(video_send_stream_impl.cc:465): SignalEncoderActive, Encoder is active.
+(frame_generator.cc:254): FRAME READ: 218354103232
+(probe_bitrate_estimator.cc:159): Probing successful [cluster id: 1] [send: 3015 bytes / 28 ms = 861428 bps ] [receive: 3015 bytes / 28 ms = 861428 bps]
+(trendline_estimator.cc:185): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:20 and no network state predictor
+(trendline_estimator.cc:185): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:20 and no network state predictor
+(probe_controller.cc:280): Measured bitrate: 861428 Minimum to probe further: 1260000
+(frame_generator.cc:254): FRAME READ: 218354136632
+(probe_bitrate_estimator.cc:159): Probing successful [cluster id: 1] [send: 4020 bytes / 37 ms = 869189 bps ] [receive: 4004 bytes / 37 ms = 865729 bps]
+(probe_bitrate_estimator.cc:159): Probing successful [cluster id: 2] [send: 2333 bytes / 11 ms = 1696727 bps ] [receive: 2369 bytes / 11 ms = 1722909 bps]
+(probe_bitrate_estimator.cc:159): Probing successful [cluster id: 2] [send: 3146 bytes / 14 ms = 1797714 bps ] [receive: 3182 bytes / 14 ms = 1818285 bps]
+(probe_controller.cc:280): Measured bitrate: 1797714 Minimum to probe further: 1260000
+(bitrate_prober.cc:112): Probe cluster (bitrate:min bytes:min packets): (3595428:6741:5)
+(frame_generator.cc:254): FRAME READ: 218354170025
+(frame_generator.cc:254): FRAME READ: 218354203415
+(frame_generator.cc:254): FRAME READ: 218354236624
+(probe_bitrate_estimator.cc:159): Probing successful [cluster id: 3] [send: 5223 bytes / 10 ms = 4178400 bps ] [receive: 4537 bytes / 10 ms = 3629600 bps]
+(probe_bitrate_estimator.cc:159): Probing successful [cluster id: 3] [send: 5447 bytes / 10 ms = 4357600 bps ] [receive: 4761 bytes / 10 ms = 3808800 bps]
+(probe_bitrate_estimator.cc:159): Probing successful [cluster id: 3] [send: 5671 bytes / 12 ms = 3780666 bps ] [receive: 4985 bytes / 12 ms = 3323333 bps]
+(probe_bitrate_estimator.cc:159): Probing successful [cluster id: 3] [send: 5895 bytes / 12 ms = 3930 kbps ] [receive: 5209 bytes / 13 ms = 3205538 bps]
+(probe_bitrate_estimator.cc:159): Probing successful [cluster id: 3] [send: 6119 bytes / 13 ms = 3765538 bps ] [receive: 5433 bytes / 13 ms = 3343384 bps]
+(probe_bitrate_estimator.cc:159): Probing successful [cluster id: 3] [send: 6343 bytes / 13 ms = 3903384 bps ] [receive: 5657 bytes / 13 ms = 3481230 bps]
+(probe_bitrate_estimator.cc:159): Probing successful [cluster id: 3] [send: 6567 bytes / 13 ms = 4041230 bps ] [receive: 5881 bytes / 13 ms = 3619076 bps]
+(probe_controller.cc:280): Measured bitrate: 3438122 Minimum to probe further: 2516799
+(bitrate_prober.cc:112): Probe cluster (bitrate:min bytes:min packets): (4064000:7620:5)
+(frame_generator.cc:254): FRAME READ: 218354269843
+(frame_generator.cc:254): FRAME READ: 218354303055
+(probe_bitrate_estimator.cc:159): Probing successful [cluster id: 4] [send: 5823 bytes / 12 ms = 3882 kbps ] [receive: 5814 bytes / 12 ms = 3876 kbps]
+(probe_bitrate_estimator.cc:159): Probing successful [cluster id: 4] [send: 6760 bytes / 12 ms = 4506666 bps ] [receive: 6751 bytes / 12 ms = 4500666 bps]
+(frame_generator.cc:254): FRAME READ: 218354336267
+(frame_generator.cc:254): FRAME READ: 218354369486
+(frame_generator.cc:254): FRAME READ: 218354403701
+(frame_generator.cc:254): FRAME READ: 218354436918
+(frame_generator.cc:254): FRAME READ: 218354470137
+(frame_generator.cc:254): FRAME READ: 218354503354
+(frame_generator.cc:254): FRAME READ: 218354536567
+(frame_generator.cc:254): FRAME READ: 218354569793
+(frame_generator.cc:254): FRAME READ: 218354603008
+(frame_generator.cc:254): FRAME READ: 218354636229
+(frame_generator.cc:254): FRAME READ: 218354669454
+(frame_generator.cc:254): FRAME READ: 218354703668
+(frame_generator.cc:254): FRAME READ: 218354736882
+(frame_generator.cc:254): FRAME READ: 218354770095
+(frame_generator.cc:254): FRAME READ: 218354803324
+(frame_generator.cc:254): FRAME READ: 218354836549
+(frame_generator.cc:254): FRAME READ: 218354869779
+(frame_generator.cc:254): FRAME READ: 218354903006
+(frame_generator.cc:254): FRAME READ: 218354936228
+(frame_generator.cc:254): FRAME READ: 218354969461
+(frame_generator.cc:254): FRAME READ: 218355003702
+(frame_generator.cc:254): FRAME READ: 218355036959
+(frame_generator.cc:254): FRAME READ: 218355070197
+(frame_generator.cc:254): FRAME READ: 218355103436
+(frame_generator.cc:254): FRAME READ: 218355136679
+(frame_generator.cc:254): FRAME READ: 218355169906
+(frame_generator.cc:254): FRAME READ: 218355203121
+(frame_generator.cc:254): FRAME READ: 218355236340
+(frame_generator.cc:254): FRAME READ: 218355269576
+(frame_generator.cc:254): FRAME READ: 218355302796
+(frame_generator.cc:254): FRAME READ: 218355337018
+(frame_generator.cc:254): FRAME READ: 218355370236
+(frame_generator.cc:254): FRAME READ: 218355403444
+(frame_generator.cc:254): FRAME READ: 218355436652
+(frame_generator.cc:254): FRAME READ: 218355469872
+(frame_generator.cc:254): FRAME READ: 218355503089
+(frame_generator.cc:254): FRAME READ: 218355536300
+(frame_generator.cc:254): FRAME READ: 218355569511
+(frame_generator.cc:254): FRAME READ: 218355603716
+(frame_generator.cc:254): FRAME READ: 218355636928
+(frame_generator.cc:254): FRAME READ: 218355670141
+(frame_generator.cc:254): FRAME READ: 218355703351
+(frame_generator.cc:254): FRAME READ: 218355736566
+(frame_generator.cc:254): FRAME READ: 218355769785
+(block_processor.cc:179): Delay changed to 1 at block 433
+(frame_generator.cc:254): FRAME READ: 218355803000
+(frame_generator.cc:254): FRAME READ: 218355836214
+(frame_generator.cc:254): FRAME READ: 218355870429
+(frame_generator.cc:254): FRAME READ: 218355903646
+(frame_generator.cc:254): FRAME READ: 218355936866
+(frame_generator.cc:254): FRAME READ: 218355970081
+(frame_generator.cc:254): FRAME READ: 218356003288
+(frame_generator.cc:254): FRAME READ: 218356036503
+(frame_generator.cc:254): FRAME READ: 218356069716
+(frame_generator.cc:254): FRAME READ: 218356102926
+(frame_generator.cc:254): FRAME READ: 218356136142
+(frame_generator.cc:254): FRAME READ: 218356170364
+(frame_generator.cc:254): FRAME READ: 218356203569
+(frame_generator.cc:254): FRAME READ: 218356236795
+(frame_generator.cc:254): FRAME READ: 218356270005
+(frame_generator.cc:254): FRAME READ: 218356303226
+(frame_generator.cc:254): FRAME READ: 218356336444
+(frame_generator.cc:254): FRAME READ: 218356369654
+(frame_generator.cc:254): FRAME READ: 218356402866
+(frame_generator.cc:254): FRAME READ: 218356437088
+(frame_generator.cc:254): FRAME READ: 218356470302
+(frame_generator.cc:254): FRAME READ: 218356503511
+(frame_generator.cc:254): FRAME READ: 218356536721
+(frame_generator.cc:254): FRAME READ: 218356569934
+(frame_generator.cc:254): FRAME READ: 218356603140
+(frame_generator.cc:254): FRAME READ: 218356636347
+(frame_generator.cc:254): FRAME READ: 218356669550
+(frame_generator.cc:254): FRAME READ: 218356702759
+(frame_generator.cc:254): FRAME READ: 218356736979
+(frame_generator.cc:254): FRAME READ: 218356770182
+(frame_generator.cc:254): FRAME READ: 218356803397
+(frame_generator.cc:254): FRAME READ: 218356836605
+(frame_generator.cc:254): FRAME READ: 218356869811
+(frame_generator.cc:254): FRAME READ: 218356903021
+(frame_generator.cc:254): FRAME READ: 218356936225
+(frame_generator.cc:254): FRAME READ: 218356969429
+(frame_generator.cc:254): FRAME READ: 218357003641
+(frame_generator.cc:254): FRAME READ: 218357036845
+(frame_generator.cc:254): FRAME READ: 218357070053
+(frame_generator.cc:254): FRAME READ: 218357103274
+(frame_generator.cc:254): FRAME READ: 218357136489
+(frame_generator.cc:254): FRAME READ: 218357169697
+(frame_generator.cc:254): FRAME READ: 218357202909
+(frame_generator.cc:254): FRAME READ: 218357236125
+(frame_generator.cc:254): FRAME READ: 218357270338
+(frame_generator.cc:254): FRAME READ: 218357303551
+(frame_generator.cc:254): FRAME READ: 218357336764
+(frame_generator.cc:254): FRAME READ: 218357369977
+(frame_generator.cc:254): FRAME READ: 218357403204
+(frame_generator.cc:254): FRAME READ: 218357436429
+(frame_generator.cc:254): FRAME READ: 218357469638
+(frame_generator.cc:254): FRAME READ: 218357502850
+(frame_generator.cc:254): FRAME READ: 218357537068
+(frame_generator.cc:254): FRAME READ: 218357570285
+(frame_generator.cc:254): FRAME READ: 218357603491
+(frame_generator.cc:254): FRAME READ: 218357636700
+(frame_generator.cc:254): FRAME READ: 218357669908
+(frame_generator.cc:254): FRAME READ: 218357703116
+(frame_generator.cc:254): FRAME READ: 218357736320
+(frame_generator.cc:254): FRAME READ: 218357769529
+(frame_generator.cc:254): FRAME READ: 218357803736
+(frame_generator.cc:254): FRAME READ: 218357836945
+(frame_generator.cc:254): FRAME READ: 218357870156
+(frame_generator.cc:254): FRAME READ: 218357903384
+(frame_generator.cc:254): FRAME READ: 218357936617
+(frame_generator.cc:254): FRAME READ: 218357969862
+(frame_generator.cc:254): FRAME READ: 218358003113
+(frame_generator.cc:254): FRAME READ: 218358036357
+(frame_generator.cc:254): FRAME READ: 218358069592
+(quality_scaler.cc:378): Checking average QP 30 (30).
+(frame_generator.cc:254): FRAME READ: 218358102826
+(frame_generator.cc:254): FRAME READ: 218358137054
+(frame_generator.cc:254): FRAME READ: 218358170286
+(frame_generator.cc:254): FRAME READ: 218358203512
+(frame_generator.cc:254): FRAME READ: 218358236741
+(frame_generator.cc:254): FRAME READ: 218358269968
+(frame_generator.cc:254): FRAME READ: 218358303188
+(frame_generator.cc:254): FRAME READ: 218358336412
+(frame_generator.cc:254): FRAME READ: 218358369634
+(frame_generator.cc:254): FRAME READ: 218358402856
+(frame_generator.cc:254): FRAME READ: 218358437075
+(frame_generator.cc:254): FRAME READ: 218358470304
+(frame_generator.cc:254): FRAME READ: 218358503525
+(frame_generator.cc:254): FRAME READ: 218358536749
+(frame_generator.cc:254): FRAME READ: 218358569978
+(frame_generator.cc:254): FRAME READ: 218358603203
+(frame_generator.cc:254): FRAME READ: 218358636427
+(frame_generator.cc:254): FRAME READ: 218358669647
+(frame_generator.cc:254): FRAME READ: 218358702866
+(frame_generator.cc:254): FRAME READ: 218358736098
+(frame_generator.cc:254): FRAME READ: 218358770314
+(frame_generator.cc:254): FRAME READ: 218358803528
+(frame_generator.cc:254): FRAME READ: 218358836743
+(frame_generator.cc:254): FRAME READ: 218358869959
+(frame_generator.cc:254): FRAME READ: 218358903172
+(frame_generator.cc:254): FRAME READ: 218358936388
+(frame_generator.cc:254): FRAME READ: 218358969602
+(frame_generator.cc:254): FRAME READ: 218359002816
+(frame_generator.cc:254): FRAME READ: 218359037031
+(frame_generator.cc:254): FRAME READ: 218359070253
+(frame_generator.cc:254): FRAME READ: 218359103471
+(frame_generator.cc:254): FRAME READ: 218359136688
+(frame_generator.cc:254): FRAME READ: 218359169903
+(frame_generator.cc:254): FRAME READ: 218359203121
+(frame_generator.cc:254): FRAME READ: 218359236338
+(frame_generator.cc:254): FRAME READ: 218359269558
+(frame_generator.cc:254): FRAME READ: 218359302764
+(frame_generator.cc:254): FRAME READ: 218359336964
+(frame_generator.cc:254): FRAME READ: 218359370157
+(frame_generator.cc:254): FRAME READ: 218359403363
+(frame_generator.cc:254): FRAME READ: 218359436592
+(frame_generator.cc:254): FRAME READ: 218359469817
+(frame_generator.cc:254): FRAME READ: 218359503025
+(frame_generator.cc:254): FRAME READ: 218359536231
+(frame_generator.cc:254): FRAME READ: 218359569438
+(frame_generator.cc:254): FRAME READ: 218359603654
+(frame_generator.cc:254): FRAME READ: 218359636867
+(frame_generator.cc:254): FRAME READ: 218359670073
+(frame_generator.cc:254): FRAME READ: 218359703277
+(frame_generator.cc:254): FRAME READ: 218359736482
+(frame_generator.cc:254): FRAME READ: 218359769701
+(frame_generator.cc:254): FRAME READ: 218359802923
+(frame_generator.cc:254): FRAME READ: 218359836145
+(frame_generator.cc:254): FRAME READ: 218359870366
+(frame_generator.cc:254): FRAME READ: 218359903588
+(frame_generator.cc:254): FRAME READ: 218359936816
+(frame_generator.cc:254): FRAME READ: 218359970031
+(frame_generator.cc:254): FRAME READ: 218360003244
+(frame_generator.cc:254): FRAME READ: 218360036459
+(frame_generator.cc:254): FRAME READ: 218360069685
+(quality_scaler.cc:378): Checking average QP 23 (23).
+(frame_generator.cc:254): FRAME READ: 218360102901
+(frame_generator.cc:254): FRAME READ: 218360136139
+(frame_generator.cc:254): FRAME READ: 218360170360
+(frame_generator.cc:254): FRAME READ: 218360203589
+(frame_generator.cc:254): FRAME READ: 218360236806
+(frame_generator.cc:254): FRAME READ: 218360270026
+(frame_generator.cc:254): FRAME READ: 218360303250
+(frame_generator.cc:254): FRAME READ: 218360336467
+(frame_generator.cc:254): FRAME READ: 218360369684
+(frame_generator.cc:254): FRAME READ: 218360402902
+(frame_generator.cc:254): FRAME READ: 218360436130
+(frame_generator.cc:254): FRAME READ: 218360470346
+(frame_generator.cc:254): FRAME READ: 218360503565
+(frame_generator.cc:254): FRAME READ: 218360536786
+(frame_generator.cc:254): FRAME READ: 218360569998
+(frame_generator.cc:254): FRAME READ: 218360603211
+(frame_generator.cc:254): FRAME READ: 218360636424
+(frame_generator.cc:254): FRAME READ: 218360669636
+(frame_generator.cc:254): FRAME READ: 218360702855
+(frame_generator.cc:254): FRAME READ: 218360736093
+(frame_generator.cc:254): FRAME READ: 218360770320
+(frame_generator.cc:254): FRAME READ: 218360803536
+(frame_generator.cc:254): FRAME READ: 218360836755
+(frame_generator.cc:254): FRAME READ: 218360869983
+(frame_generator.cc:254): FRAME READ: 218360903209
+(frame_generator.cc:254): FRAME READ: 218360936437
+(frame_generator.cc:254): FRAME READ: 218360969661
+(frame_generator.cc:254): FRAME READ: 218361002877
+(frame_generator.cc:254): FRAME READ: 218361036100
+(frame_generator.cc:254): FRAME READ: 218361070316
+(frame_generator.cc:254): FRAME READ: 218361103546
+(frame_generator.cc:254): FRAME READ: 218361136761
+(frame_generator.cc:254): FRAME READ: 218361169985
+(frame_generator.cc:254): FRAME READ: 218361203203
+(frame_generator.cc:254): FRAME READ: 218361236422
+(frame_generator.cc:254): FRAME READ: 218361269642
+(frame_generator.cc:254): FRAME READ: 218361302861
+(frame_generator.cc:254): FRAME READ: 218361336093
+(frame_generator.cc:254): FRAME READ: 218361370307
+(frame_generator.cc:254): FRAME READ: 218361403528
+(frame_generator.cc:254): FRAME READ: 218361436751
+(frame_generator.cc:254): FRAME READ: 218361469972
+(frame_generator.cc:254): FRAME READ: 218361503189
+(frame_generator.cc:254): FRAME READ: 218361536409
+(frame_generator.cc:254): FRAME READ: 218361569627
+(frame_generator.cc:254): FRAME READ: 218361602846
+(frame_generator.cc:254): FRAME READ: 218361636091
+(frame_generator.cc:254): FRAME READ: 218361670309
+(frame_generator.cc:254): FRAME READ: 218361703529
+(frame_generator.cc:254): FRAME READ: 218361736749
+(frame_generator.cc:254): FRAME READ: 218361769970
+(frame_generator.cc:254): FRAME READ: 218361803200
+(frame_generator.cc:254): FRAME READ: 218361836426
+(frame_generator.cc:254): FRAME READ: 218361869648
+(frame_generator.cc:254): FRAME READ: 218361902872
+(frame_generator.cc:254): FRAME READ: 218361936092
+(frame_generator.cc:254): FRAME READ: 218361970303
+(frame_generator.cc:254): FRAME READ: 218362003520
+(frame_generator.cc:254): FRAME READ: 218362036739
+(frame_generator.cc:254): FRAME READ: 218362069991
+(quality_scaler.cc:378): Checking average QP 31 (31).
+(frame_generator.cc:254): FRAME READ: 218362103233
+(frame_generator.cc:254): FRAME READ: 218362136474
+(frame_generator.cc:254): FRAME READ: 218362169716
+(frame_generator.cc:254): FRAME READ: 218362202952
+(frame_generator.cc:254): FRAME READ: 218362236197
+(block_processor.cc:179): Delay changed to 49 at block 2049
+(frame_generator.cc:254): FRAME READ: 218362269445
+(frame_generator.cc:254): FRAME READ: 218362303687
+(frame_generator.cc:254): FRAME READ: 218362336925
+(frame_generator.cc:254): FRAME READ: 218362370175
+(frame_generator.cc:254): FRAME READ: 218362403435
+(frame_generator.cc:254): FRAME READ: 218362436679
+(frame_generator.cc:254): FRAME READ: 218362469927
+(frame_generator.cc:254): FRAME READ: 218362503190
+(frame_generator.cc:254): FRAME READ: 218362536443
+(frame_generator.cc:254): FRAME READ: 218362569687
+(frame_generator.cc:254): FRAME READ: 218362602928
+(frame_generator.cc:254): FRAME READ: 218362636188
+(frame_generator.cc:254): FRAME READ: 218362669441
+(frame_generator.cc:254): FRAME READ: 218362703701
+(frame_generator.cc:254): FRAME READ: 218362736945
+(frame_generator.cc:254): FRAME READ: 218362770210
+(frame_generator.cc:254): FRAME READ: 218362803456
+(frame_generator.cc:254): FRAME READ: 218362836708
+(frame_generator.cc:254): FRAME READ: 218362869957
+(frame_generator.cc:254): FRAME READ: 218362903202
+(frame_generator.cc:254): FRAME READ: 218362936454
+(frame_generator.cc:254): FRAME READ: 218362969711
+(frame_generator.cc:254): FRAME READ: 218363002959
+(frame_generator.cc:254): FRAME READ: 218363036172
+(frame_generator.cc:254): FRAME READ: 218363069408
+(frame_generator.cc:254): FRAME READ: 218363103648
+(frame_generator.cc:254): FRAME READ: 218363136888
+(frame_generator.cc:254): FRAME READ: 218363170126
+(frame_generator.cc:254): FRAME READ: 218363203370
+(frame_generator.cc:254): FRAME READ: 218363236611
+(frame_generator.cc:254): FRAME READ: 218363269846
+(frame_generator.cc:254): FRAME READ: 218363303087
+(frame_generator.cc:254): FRAME READ: 218363336324
+(frame_generator.cc:254): FRAME READ: 218363369564
+(frame_generator.cc:254): FRAME READ: 218363402818
+(frame_generator.cc:254): FRAME READ: 218363436085
+(frame_generator.cc:254): FRAME READ: 218363470329
+(frame_generator.cc:254): FRAME READ: 218363503571
+(frame_generator.cc:254): FRAME READ: 218363536812
+(frame_generator.cc:254): FRAME READ: 218363570057
+(frame_generator.cc:254): FRAME READ: 218363603291
+(frame_generator.cc:254): FRAME READ: 218363636526
+(frame_generator.cc:254): FRAME READ: 218363669766
+(frame_generator.cc:254): FRAME READ: 218363703003
+(frame_generator.cc:254): FRAME READ: 218363736238
+(remote_ntp_time_estimator.cc:86): RTP timestamp: 1828658111 in NTP clock: 3907679518086 estimated time in receiver NTP clock: 3907679518087
+(frame_generator.cc:254): FRAME READ: 218363769475
+(frame_generator.cc:254): FRAME READ: 218363802714
+(frame_generator.cc:254): FRAME READ: 218363836959
+(frame_generator.cc:254): FRAME READ: 218363870198
+(frame_generator.cc:254): FRAME READ: 218363903435
+(frame_generator.cc:254): FRAME READ: 218363936669
+(frame_generator.cc:254): FRAME READ: 218363969904
+(frame_generator.cc:254): FRAME READ: 218364003145
+(frame_generator.cc:254): FRAME READ: 218364036380
+(frame_generator.cc:254): FRAME READ: 218364069607
+(quality_scaler.cc:378): Checking average QP 29 (29).
+(frame_generator.cc:254): FRAME READ: 218364102839
+(frame_generator.cc:254): FRAME READ: 218364136075
+(frame_generator.cc:254): FRAME READ: 218364170345
+(frame_generator.cc:254): FRAME READ: 218364203592
+(frame_generator.cc:254): FRAME READ: 218364236827
+(frame_generator.cc:254): FRAME READ: 218364270064
+(frame_generator.cc:254): FRAME READ: 218364303311
+(frame_generator.cc:254): FRAME READ: 218364336541
+(frame_generator.cc:254): FRAME READ: 218364369773
+(frame_generator.cc:254): FRAME READ: 218364403007
+(frame_generator.cc:254): FRAME READ: 218364436241
+(frame_generator.cc:254): FRAME READ: 218364469494
+(frame_generator.cc:254): FRAME READ: 218364502747
+(frame_generator.cc:254): FRAME READ: 218364536984
+(frame_generator.cc:254): FRAME READ: 218364570225
+(frame_generator.cc:254): FRAME READ: 218364603459
+(frame_generator.cc:254): FRAME READ: 218364636696
+(frame_generator.cc:254): FRAME READ: 218364669930
+(frame_generator.cc:254): FRAME READ: 218364703160
+(frame_generator.cc:254): FRAME READ: 218364736391
+(frame_generator.cc:254): FRAME READ: 218364769628
+(frame_generator.cc:254): FRAME READ: 218364802861
+(frame_generator.cc:254): FRAME READ: 218364836112
+(frame_generator.cc:254): FRAME READ: 218364870346
+(frame_generator.cc:254): FRAME READ: 218364903581
+(frame_generator.cc:254): FRAME READ: 218364936817
+(frame_generator.cc:254): FRAME READ: 218364970060
+(frame_generator.cc:254): FRAME READ: 218365003294
+(frame_generator.cc:254): FRAME READ: 218365036544
+(frame_generator.cc:254): FRAME READ: 218365069784
+(frame_generator.cc:254): FRAME READ: 218365103017
+(frame_generator.cc:254): FRAME READ: 218365136250
+(frame_generator.cc:254): FRAME READ: 218365169494
+(frame_generator.cc:254): FRAME READ: 218365202761
+(frame_generator.cc:254): FRAME READ: 218365237008
+(frame_generator.cc:254): FRAME READ: 218365270249
+(frame_generator.cc:254): FRAME READ: 218365303482
+(frame_generator.cc:254): FRAME READ: 218365336717
+(frame_generator.cc:254): FRAME READ: 218365369950
+(frame_generator.cc:254): FRAME READ: 218365403184
+(frame_generator.cc:254): FRAME READ: 218365436418
+(frame_generator.cc:254): FRAME READ: 218365469693
+(frame_generator.cc:254): FRAME READ: 218365502949
+(frame_generator.cc:254): FRAME READ: 218365536211
+(frame_generator.cc:254): FRAME READ: 218365569469
+(frame_generator.cc:254): FRAME READ: 218365602728
+(frame_generator.cc:254): FRAME READ: 218365636995
+(frame_generator.cc:254): FRAME READ: 218365670242
+(frame_generator.cc:254): FRAME READ: 218365703484
+(frame_generator.cc:254): FRAME READ: 218365736717
+(frame_generator.cc:254): FRAME READ: 218365769965
+(frame_generator.cc:254): FRAME READ: 218365803203
+(frame_generator.cc:254): FRAME READ: 218365836438
+(frame_generator.cc:254): FRAME READ: 218365869669
+(frame_generator.cc:254): FRAME READ: 218365902904
+(frame_generator.cc:254): FRAME READ: 218365936150
+(frame_generator.cc:254): FRAME READ: 218365969391
+(frame_generator.cc:254): FRAME READ: 218366003631
+(frame_generator.cc:254): FRAME READ: 218366036868
+(frame_generator.cc:254): FRAME READ: 218366070110
+(quality_scaler.cc:378): Checking average QP 18 (18).
+(frame_generator.cc:254): FRAME READ: 218366103348
+(frame_generator.cc:254): FRAME READ: 218366136580
+(frame_generator.cc:254): FRAME READ: 218366169815
+(frame_generator.cc:254): FRAME READ: 218366203050
+(frame_generator.cc:254): FRAME READ: 218366236308
+(frame_generator.cc:254): FRAME READ: 218366269546
+(frame_generator.cc:254): FRAME READ: 218366302784
+(frame_generator.cc:254): FRAME READ: 218366336027
+(frame_generator.cc:254): FRAME READ: 218366370262
+(frame_generator.cc:254): FRAME READ: 218366403499
+(frame_generator.cc:254): FRAME READ: 218366436736
+(frame_generator.cc:254): FRAME READ: 218366469972
+(frame_generator.cc:254): FRAME READ: 218366503206
+(frame_generator.cc:254): FRAME READ: 218366536436
+(frame_generator.cc:254): FRAME READ: 218366569666
+(frame_generator.cc:254): FRAME READ: 218366602899
+(frame_generator.cc:254): FRAME READ: 218366636148
+(frame_generator.cc:254): FRAME READ: 218366669397
+(frame_generator.cc:254): FRAME READ: 218366703649
+(frame_generator.cc:254): FRAME READ: 218366736899
+(frame_generator.cc:254): FRAME READ: 218366770143
+(frame_generator.cc:254): FRAME READ: 218366803374
+(frame_generator.cc:254): FRAME READ: 218366836604
+(frame_generator.cc:254): FRAME READ: 218366869835
+(frame_generator.cc:254): FRAME READ: 218366903077
+(frame_generator.cc:254): FRAME READ: 218366936321
+(frame_generator.cc:254): FRAME READ: 218366969565
+(frame_generator.cc:254): FRAME READ: 218367002798
+(frame_generator.cc:254): FRAME READ: 218367036039
+(frame_generator.cc:254): FRAME READ: 218367070264
+(frame_generator.cc:254): FRAME READ: 218367103494
+(frame_generator.cc:254): FRAME READ: 218367136743
+(frame_generator.cc:254): FRAME READ: 218367169966
+(frame_generator.cc:254): FRAME READ: 218367203198
+(frame_generator.cc:254): FRAME READ: 218367236432
+(frame_generator.cc:254): FRAME READ: 218367269658
+(frame_generator.cc:254): FRAME READ: 218367302883
+(frame_generator.cc:254): FRAME READ: 218367336129
+(frame_generator.cc:254): FRAME READ: 218367369358
+(frame_generator.cc:254): FRAME READ: 218367403586
+(frame_generator.cc:254): FRAME READ: 218367436832
+(frame_generator.cc:254): FRAME READ: 218367470076
+(frame_generator.cc:254): FRAME READ: 218367503307
+(frame_generator.cc:254): FRAME READ: 218367536543
+(frame_generator.cc:254): FRAME READ: 218367569777
+(frame_generator.cc:254): FRAME READ: 218367603004
+(frame_generator.cc:254): FRAME READ: 218367636234
+(frame_generator.cc:254): FRAME READ: 218367669532
+(frame_generator.cc:254): FRAME READ: 218367702774
+(frame_generator.cc:254): FRAME READ: 218367736020
+(frame_generator.cc:254): FRAME READ: 218367770249
+(frame_generator.cc:254): FRAME READ: 218367803529
+(frame_generator.cc:254): FRAME READ: 218367836782
+(frame_generator.cc:254): FRAME READ: 218367870020
+(frame_generator.cc:254): FRAME READ: 218367903262
+(frame_generator.cc:254): FRAME READ: 218367936494
+(frame_generator.cc:254): FRAME READ: 218367969726
+(frame_generator.cc:254): FRAME READ: 218368002968
+(frame_generator.cc:254): FRAME READ: 218368036252
+(frame_generator.cc:254): FRAME READ: 218368069484
+(quality_scaler.cc:378): Checking average QP 25 (25).
+(frame_generator.cc:254): FRAME READ: 218368102713
+(frame_generator.cc:254): FRAME READ: 218368136937
+(frame_generator.cc:254): FRAME READ: 218368170165
+(frame_generator.cc:254): FRAME READ: 218368203405
+(frame_generator.cc:254): FRAME READ: 218368236652
+(frame_generator.cc:254): FRAME READ: 218368269899
+(frame_generator.cc:254): FRAME READ: 218368303148
+(frame_generator.cc:254): FRAME READ: 218368336469
+(frame_generator.cc:254): FRAME READ: 218368369714
+(frame_generator.cc:254): FRAME READ: 218368402956
+(frame_generator.cc:254): FRAME READ: 218368436199
+(frame_generator.cc:254): FRAME READ: 218368469429
+(frame_generator.cc:254): FRAME READ: 218368502659
+(frame_generator.cc:254): FRAME READ: 218368536893
+(frame_generator.cc:254): FRAME READ: 218368570117
+(frame_generator.cc:254): FRAME READ: 218368603342
+(frame_generator.cc:254): FRAME READ: 218368636563
+(frame_generator.cc:254): FRAME READ: 218368669785
+(frame_generator.cc:254): FRAME READ: 218368703017
+(frame_generator.cc:254): FRAME READ: 218368736246
+(frame_generator.cc:254): FRAME READ: 218368769487
+(frame_generator.cc:254): FRAME READ: 218368802734
+(frame_generator.cc:254): FRAME READ: 218368836980
+(frame_generator.cc:254): FRAME READ: 218368870226
+(frame_generator.cc:254): FRAME READ: 218368903470
+(frame_generator.cc:254): FRAME READ: 218368936714
+(frame_generator.cc:254): FRAME READ: 218368969961
+(frame_generator.cc:254): FRAME READ: 218369003207
+(frame_generator.cc:254): FRAME READ: 218369036453
+(frame_generator.cc:254): FRAME READ: 218369069694
+(frame_generator.cc:254): FRAME READ: 218369102940
+(frame_generator.cc:254): FRAME READ: 218369136189
+(frame_generator.cc:254): FRAME READ: 218369169448
+(frame_generator.cc:254): FRAME READ: 218369202694
+(frame_generator.cc:254): FRAME READ: 218369236924
+(frame_generator.cc:254): FRAME READ: 218369270148
+(frame_generator.cc:254): FRAME READ: 218369303371
+(frame_generator.cc:254): FRAME READ: 218369336595
+(frame_generator.cc:254): FRAME READ: 218369369907
+(frame_generator.cc:254): FRAME READ: 218369403136
+(frame_generator.cc:254): FRAME READ: 218369436358
+(frame_generator.cc:254): FRAME READ: 218369469595
+(frame_generator.cc:254): FRAME READ: 218369502825
+(frame_generator.cc:254): FRAME READ: 218369536115
+(frame_generator.cc:254): FRAME READ: 218369569371
+(frame_generator.cc:254): FRAME READ: 218369603621
+(frame_generator.cc:254): FRAME READ: 218369636866
+(frame_generator.cc:254): FRAME READ: 218369670095
+(frame_generator.cc:254): FRAME READ: 218369703340
+(frame_generator.cc:254): FRAME READ: 218369736591
+(frame_generator.cc:254): FRAME READ: 218369769842
+(frame_generator.cc:254): FRAME READ: 218369803094
+(frame_generator.cc:254): FRAME READ: 218369836343
+(frame_generator.cc:254): FRAME READ: 218369869585
+(frame_generator.cc:254): FRAME READ: 218369902834
+(frame_generator.cc:254): FRAME READ: 218369936095
+(frame_generator.cc:254): FRAME READ: 218369969340
+(frame_generator.cc:254): FRAME READ: 218370003570
+(frame_generator.cc:254): FRAME READ: 218370036792
+(frame_generator.cc:254): FRAME READ: 218370070015
+(quality_scaler.cc:378): Checking average QP 31 (31).
+(frame_generator.cc:254): FRAME READ: 218370103235
+(frame_generator.cc:254): FRAME READ: 218370136455
+(frame_generator.cc:254): FRAME READ: 218370169694
+(frame_generator.cc:254): FRAME READ: 218370202928
+(frame_generator.cc:254): FRAME READ: 218370236150
+(frame_generator.cc:254): FRAME READ: 218370269369
+(frame_generator.cc:254): FRAME READ: 218370303612
+(frame_generator.cc:254): FRAME READ: 218370336836
+(frame_generator.cc:254): FRAME READ: 218370370059
+(frame_generator.cc:254): FRAME READ: 218370403273
+(frame_generator.cc:254): FRAME READ: 218370436494
+(frame_generator.cc:254): FRAME READ: 218370469703
+(frame_generator.cc:254): FRAME READ: 218370502913
+(frame_generator.cc:254): FRAME READ: 218370536130
+(frame_generator.cc:254): FRAME READ: 218370569342
+(frame_generator.cc:254): FRAME READ: 218370603553
+(frame_generator.cc:254): FRAME READ: 218370636774
+(frame_generator.cc:254): FRAME READ: 218370669987
+(frame_generator.cc:254): FRAME READ: 218370703202
+(frame_generator.cc:254): FRAME READ: 218370736419
+(frame_generator.cc:254): FRAME READ: 218370769634
+(frame_generator.cc:254): FRAME READ: 218370802844
+(frame_generator.cc:254): FRAME READ: 218370836070
+(frame_generator.cc:254): FRAME READ: 218370870279
+(frame_generator.cc:254): FRAME READ: 218370903494
+(frame_generator.cc:254): FRAME READ: 218370936710
+(frame_generator.cc:254): FRAME READ: 218370969925
+(frame_generator.cc:254): FRAME READ: 218371003138
+(frame_generator.cc:254): FRAME READ: 218371036348
+(frame_generator.cc:254): FRAME READ: 218371069564
+(frame_generator.cc:254): FRAME READ: 218371102784
+(frame_generator.cc:254): FRAME READ: 218371135998
+(frame_generator.cc:254): FRAME READ: 218371170222
+(frame_generator.cc:254): FRAME READ: 218371203437
+(frame_generator.cc:254): FRAME READ: 218371236654
+(frame_generator.cc:254): FRAME READ: 218371269872
+(frame_generator.cc:254): FRAME READ: 218371303099
+(frame_generator.cc:254): FRAME READ: 218371336318
+(frame_generator.cc:254): FRAME READ: 218371369537
+(frame_generator.cc:254): FRAME READ: 218371402760
+(frame_generator.cc:254): FRAME READ: 218371435976
+(frame_generator.cc:254): FRAME READ: 218371470203
+(frame_generator.cc:254): FRAME READ: 218371503418
+(frame_generator.cc:254): FRAME READ: 218371536632
+(frame_generator.cc:254): FRAME READ: 218371569846
+(frame_generator.cc:254): FRAME READ: 218371603049
+(frame_generator.cc:254): FRAME READ: 218371636381
+(frame_generator.cc:254): FRAME READ: 218371669603
+(frame_generator.cc:254): FRAME READ: 218371702814
+(frame_generator.cc:254): FRAME READ: 218371736057
+(frame_generator.cc:254): FRAME READ: 218371770274
+(frame_generator.cc:254): FRAME READ: 218371803495
+(frame_generator.cc:254): FRAME READ: 218371836710
+(frame_generator.cc:254): FRAME READ: 218371869928
+(frame_generator.cc:254): FRAME READ: 218371903148
+(frame_generator.cc:254): FRAME READ: 218371936369
+(frame_generator.cc:254): FRAME READ: 218371969598
+(frame_generator.cc:254): FRAME READ: 218372002806
+(frame_generator.cc:254): FRAME READ: 218372036039
+(frame_generator.cc:254): FRAME READ: 218372070259
+(quality_scaler.cc:378): Checking average QP 29 (29).
+(frame_generator.cc:254): FRAME READ: 218372103473
+(frame_generator.cc:254): FRAME READ: 218372136679
+(frame_generator.cc:254): FRAME READ: 218372169888
+(frame_generator.cc:254): FRAME READ: 218372203093
+(frame_generator.cc:254): FRAME READ: 218372236314
+(frame_generator.cc:254): FRAME READ: 218372269540
+(frame_generator.cc:254): FRAME READ: 218372302774
+(frame_generator.cc:254): FRAME READ: 218372336020
+(frame_generator.cc:254): FRAME READ: 218372370242
+(frame_generator.cc:254): FRAME READ: 218372403448
+(frame_generator.cc:254): FRAME READ: 218372436666
+(frame_generator.cc:254): FRAME READ: 218372469890
+(frame_generator.cc:254): FRAME READ: 218372503107
+(frame_generator.cc:254): FRAME READ: 218372536329
+(frame_generator.cc:254): FRAME READ: 218372569567
+(frame_generator.cc:254): FRAME READ: 218372602793
+(frame_generator.cc:254): FRAME READ: 218372636036
+(frame_generator.cc:254): FRAME READ: 218372670246
+(frame_generator.cc:254): FRAME READ: 218372703480
+(frame_generator.cc:254): FRAME READ: 218372736721
+(frame_generator.cc:254): FRAME READ: 218372769948
+(frame_generator.cc:254): FRAME READ: 218372803170
+(frame_generator.cc:254): FRAME READ: 218372836395
+(frame_generator.cc:254): FRAME READ: 218372869607
+(frame_generator.cc:254): FRAME READ: 218372902848
+(frame_generator.cc:254): FRAME READ: 218372936083
+(frame_generator.cc:254): FRAME READ: 218372969308
+(frame_generator.cc:254): FRAME READ: 218373003528
+(frame_generator.cc:254): FRAME READ: 218373036753
+(frame_generator.cc:254): FRAME READ: 218373069980
+(block_processor.cc:179): Delay changed to 0 at block 4760
+(frame_generator.cc:254): FRAME READ: 218373103192
+(frame_generator.cc:254): FRAME READ: 218373136407
+(frame_generator.cc:254): FRAME READ: 218373169622
+(frame_generator.cc:254): FRAME READ: 218373202839
+(frame_generator.cc:254): FRAME READ: 218373236070
+(frame_generator.cc:254): FRAME READ: 218373269311
+(frame_generator.cc:254): FRAME READ: 218373303547
+(frame_generator.cc:254): FRAME READ: 218373336777
+(frame_generator.cc:254): FRAME READ: 218373370024
+(frame_generator.cc:254): FRAME READ: 218373403272
+(frame_generator.cc:254): FRAME READ: 218373436508
+(frame_generator.cc:254): FRAME READ: 218373469737
+(frame_generator.cc:254): FRAME READ: 218373502970
+(frame_generator.cc:254): FRAME READ: 218373536209
+(frame_generator.cc:254): FRAME READ: 218373569441
+(frame_generator.cc:254): FRAME READ: 218373602652
+(frame_generator.cc:254): FRAME READ: 218373636868
+(frame_generator.cc:254): FRAME READ: 218373670094
+(frame_generator.cc:254): FRAME READ: 218373703321
+(frame_generator.cc:254): FRAME READ: 218373736664
+(frame_generator.cc:254): FRAME READ: 218373769886
+(remote_ntp_time_estimator.cc:86): RTP timestamp: 1829138591 in NTP clock: 3907679528095 estimated time in receiver NTP clock: 3907679528096
+(frame_generator.cc:254): FRAME READ: 218373803100
+(frame_generator.cc:254): FRAME READ: 218373836316
+(frame_generator.cc:254): FRAME READ: 218373869536
+(frame_generator.cc:254): FRAME READ: 218373902753
+(frame_generator.cc:254): FRAME READ: 218373935971
+(frame_generator.cc:254): FRAME READ: 218373970199
+(frame_generator.cc:254): FRAME READ: 218374003434
+(bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 30 kbps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 2000 kbps
+(webrtc_voice_engine.cc:1959): SetOutputVolume() to 0 for recv stream with ssrc 969695178
+(webrtc_video_engine.cc:1236): SetVideoSend (ssrc= 1448162602, options: nullptr, source = nullptr)
+(webrtc_video_engine.cc:1532): SetSink: ssrc:852632439 nullptr
+(channel.cc:517): Channel disabled
+(video_send_stream.cc:177): VideoSendStream::Stop
+(channel.cc:965): Changing video state, send=0
+(video_send_stream_impl.cc:386): VideoSendStream::Stop
+(rtp_rtcp_impl.cc:312): Failed to send RTCP BYE
+(bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 0 bps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 0 bps
+(video_send_stream.cc:177): VideoSendStream::Stop
+(video_stream_encoder.cc:1699): Video suspend state changed to: suspended
+(video_send_stream_impl.cc:386): VideoSendStream::Stop
+(video_send_stream_impl.cc:386): VideoSendStream::Stop
+(video_send_stream_impl.cc:311): ~VideoSendStreamInternal: {encoder_settings: { experiment_cpu_load_estimator: off}}, rtp: {ssrcs: [1448162602], rids: [], mid: '1', rtcp_mode: RtcpMode::kReducedSize, max_packet_size: 1200, extmap-allow-mixed: false, extensions: [{uri: http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07, id: 8}, {uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 9}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 12}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 11}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}], lntf: {enabled: false}, nack: {rtp_history_ms: 1000}, ulpfec: {ulpfec_payload_type: 124, red_payload_type: 125, red_rtx_payload_type: 122}, payload_name: VP8, payload_type: 96, raw_payload: false, flexfec: {payload_type: -1, ssrc: 0, protected_media_ssrcs: []}, rtx: {ssrcs: [417219447], payload_type: 97}, c_name: oKHRFI62sJQkbFA6}, rtcp_report_interval_ms: 1000, send_transport: (Transport), render_delay_ms: 0, target_delay_ms: 0, suspend_below_min_bitrate: off}
+(send_statistics_proxy.cc:667): WebRTC.Video.InputWidthInPixels 704
+WebRTC.Video.InputHeightInPixels 576
+WebRTC.Video.InputFramesPerSecond periodic_samples:9, {min:30, avg:30, max:30}
+WebRTC.Video.SentWidthInPixels 704
+WebRTC.Video.SentHeightInPixels 576
+WebRTC.Video.SentFramesPerSecond periodic_samples:9, {min:29, avg:30, max:30}
+WebRTC.Video.SentToInputFpsRatioPercent 100
+WebRTC.Video.EncodeTimeInMs 2
+WebRTC.Video.KeyFramesSentInPermille 2
+WebRTC.Video.QualityLimitedResolutionInPercent 0
+WebRTC.Video.SentPacketsLostInPercent 0
+WebRTC.Video.NumberOfPauseEvents 0
+WebRTC.Video.PausedTimeInPercent 0
+WebRTC.Video.BitrateSentInBps periodic_samples:9, {min:1460688, avg:1978912, max:2100176}
+WebRTC.Video.MediaBitrateSentInBps periodic_samples:9, {min:1407240, avg:1931512, max:2052272}
+WebRTC.Video.PaddingBitrateSentInBps periodic_samples:9, {min:0, avg:1096, max:9856}
+WebRTC.Video.RetransmittedBitrateSentInBps periodic_samples:9, {min:0, avg:0, max:0}
+WebRTC.Video.RtxBitrateSentInBps periodic_samples:9, {min:0, avg:2072, max:18640}
+WebRTC.Video.FecBitrateSentInBps periodic_samples:9, {min:0, avg:0, max:0}
+Frames encoded 595
+WebRTC.Video.DroppedFrames.Capturer 0
+WebRTC.Video.DroppedFrames.EncoderQueue 0
+WebRTC.Video.DroppedFrames.Encoder 4
+WebRTC.Video.DroppedFrames.Ratelimiter 0
+WebRTC.Video.DroppedFrames.CongestionWindow 0
+(video_receive_stream2.cc:270): ~VideoReceiveStream2: {decoders: [{payload_type: 96, payload_name: VP8, codec_params: {}}, {payload_type: 98, payload_name: VP9, codec_params: {profile-id: 0}}, {payload_type: 100, payload_name: VP9, codec_params: {profile-id: 2}}, {payload_type: 127, payload_name: AV1X, codec_params: {}}], rtp: {remote_ssrc: 852632439, local_ssrc: 1448162602, rtcp_mode: RtcpMode::kReducedSize, rtcp_xr: {receiver_reference_time_report: off}, transport_cc: on, lntf: {enabled: false}, nack: {rtp_history_ms: 1000}, ulpfec_payload_type: 124, red_type: 125, rtx_ssrc: 1257243719, rtx_payload_types: {97 (pt) -> 96 (apt), 99 (pt) -> 98 (apt), 101 (pt) -> 100 (apt), 122 (pt) -> 125 (apt), 123 (pt) -> 127 (apt), }, raw_payload_types: {}, extensions: [{uri: http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07, id: 8}, {uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 9}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 12}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 11}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}, {uri: urn:ietf:params:rtp-hdrext:toffset, id: 14}]}, renderer: (renderer), render_delay_ms: 10, sync_group: stream_id, target_delay_ms: 0}
+(receive_statistics_proxy2.cc:495): Frames decoded 0
+WebRTC.Video.DroppedFrames.Receiver 0
+
+(video_render_frames.cc:47): WebRTC.Video.DroppedFrames.RenderQueue 0
+(channel.cc:159): Destroyed channel: 1
+(channel.cc:517): Channel disabled
+(channel.cc:816): Changing voice state, recv=0 send=0
+(webrtc_voice_engine.cc:1833): RemoveSendStream: 3230054379
+(audio_send_stream.cc:176): ~AudioSendStream: 3230054379
+(webrtc_voice_engine.cc:1905): RemoveRecvStream: 969695178
+(call.cc:1056): UpdateAggregateNetworkState: aggregate_state change to down
+(audio_receive_stream.cc:144): ~AudioReceiveStream: 969695178
+(pacing_controller.cc:155): PacedSender paused.
+(channel.cc:159): Destroyed channel: 0
+(control_handler.cc:78): Bitrate estimate state changed, BWE: 4500666 bps.
+(bitrate_allocator.cc:394): Current BWE 0
+(peer_connection.cc:1077): Session: 1560111581860736793 is destroyed.
+(openssl_stream_adapter.cc:912): Cleanup
+(call.cc:552): WebRTC.Call.EstimatedSendBitrateInKbps, periodic_samples:9, {min:2566, avg:2566, max:2566}
+(call.cc:560): WebRTC.Call.PacerBitrateInKbps, periodic_samples:9, {min:2566, avg:2566, max:2566}
+(call.cc:590): WebRTC.Call.AudioBitrateReceivedInBps, periodic_samples:9, {min:41472, avg:42032, max:42496}
+(call.cc:598): WebRTC.Call.RtcpBitrateReceivedInBps, periodic_samples:9, {min:5584, avg:6120, max:6416}
+(call.cc:606): WebRTC.Call.BitrateReceivedInBps, periodic_samples:9, {min:47808, avg:48128, max:48736}
+(paced_sender.cc:176): ProcessThreadAttached 0x0
+(paced_sender.cc:176): ProcessThreadAttached 0x0
+(send_delay_stats.cc:49): WebRTC.Video.SendDelayInMs, periodic_samples:9, {min:0, avg:0, max:0}
+(dtmf_sender.cc:225): The Dtmf provider is deleted. Clear the sending queue.
+(webrtc_video_engine.cc:576): WebRtcVideoEngine::~WebRtcVideoEngine
+(webrtc_voice_engine.cc:214): WebRtcVoiceEngine::~WebRtcVoiceEngine

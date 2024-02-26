@@ -1,0 +1,1524 @@
+(field_trial.cc:140): Setting field trial string:WebRTC-KeepAbsSendTimeExtension/Enabled/
+(audio_processing_impl.cc:272): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+(webrtc_voice_engine.cc:206): WebRtcVoiceEngine::WebRtcVoiceEngine
+(webrtc_video_engine.cc:572): WebRtcVideoEngine::WebRtcVideoEngine()
+(webrtc_voice_engine.cc:228): WebRtcVoiceEngine::Init
+(webrtc_voice_engine.cc:315): WebRtcVoiceEngine::ApplyOptions: AudioOptions {aec: 1, agc: 1, ns: 1, hf: 1, swap: 0, audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, typing: 1, experimental_agc: 0, experimental_ns: 0, residual_echo_detector: 1, }
+(webrtc_voice_engine.cc:431): Stereo swapping enabled? 0
+(webrtc_voice_engine.cc:436): NetEq capacity is 200
+(webrtc_voice_engine.cc:442): NetEq fast mode? 0
+(webrtc_voice_engine.cc:448): NetEq minimum delay is 0
+(webrtc_voice_engine.cc:454): NetEq handle reordered packets? 0
+(webrtc_voice_engine.cc:474): Experimental ns is enabled? 0
+(webrtc_voice_engine.cc:525): NS set to 1
+(webrtc_voice_engine.cc:529): Typing detection is enabled? 1
+(audio_processing_impl.cc:526): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: {maximum_internal_processing_rate: 48000, multi_channel_render: 0, , multi_channel_capture: 0}, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 1 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: Rms, use_saturation_protector: 1, extra_saturation_margin_db: 2 } }, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 } }
+(agc_manager_direct.cc:69): [agc] GetMinMicLevel
+(agc_manager_direct.cc:73): [agc] Using default min mic level: 12
+(rtc_event_log_impl.cc:43): Creating legacy encoder for RTC event log.
+(peer_connection_factory.cc:391): Using default network controller factory
+(bitrate_prober.cc:69): Bandwidth probing enabled, set to inactive
+(paced_sender.cc:176): ProcessThreadAttached 0x4c071630
+(cpu_info.cc:53): Available number of cores: 16
+(aimd_rate_control.cc:113): Using aimd rate control with back off factor 0.85
+(remote_bitrate_estimator_single_stream.cc:72): RemoteBitrateEstimatorSingleStream: Instantiating.
+(remote_estimator_proxy.cc:56): Maximum interval between transport feedback RTCP messages (ms): 250
+(peer_connection.cc:1610): Adding audio transceiver in response to a call to AddTrack.
+(openssl_identity.cc:43): Making key pair
+(peer_connection.cc:1610): Adding video transceiver in response to a call to AddTrack.
+(openssl_identity.cc:91): Returning key pair
+(openssl_certificate.cc:59): Making certificate for WebRTC
+(webrtc_sdp.cc:3316): Ignored line: a=rtcp:9 IN IP4 0.0.0.0
+(webrtc_sdp.cc:3316): Ignored line: a=rtcp:9 IN IP4 0.0.0.0
+(conductor.cc:565):  Received session description :{
+   "sdp" : "v=0\r\no=- 1560111581860736793 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1\r\na=msid-semantic: WMS stream_id\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 102 0 8 106 105 13 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:93Y3\r\na=ice-pwd:rVeyMlEWgpYz/QIgbU/N0fnb\r\na=ice-options:trickle\r\na=fingerprint:sha-256 36:58:53:90:F0:5F:18:24:FA:7A:EB:5D:14:95:49:CB:76:B6:5D:95:86:DF:0B:98:02:50:D0:09:71:7D:4E:23\r\na=setup:actpass\r\na=mid:0\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendrecv\r\na=msid:stream_id audio_label\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:102 ILBC/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:106 CN/32000\r\na=rtpmap:105 CN/16000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\na=ssrc:3230054379 cname:oKHRFI62sJQkbFA6\r\na=ssrc:3230054379 msid:stream_id audio_label\r\na=ssrc:3230054379 mslabel:stream_id\r\na=ssrc:3230054379 label:audio_label\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100 101 127 123 125 122 124\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:93Y3\r\na=ice-pwd:rVeyMlEWgpYz/QIgbU/N0fnb\r\na=ice-options:trickle\r\na=fingerprint:sha-256 36:58:53:90:F0:5F:18:24:FA:7A:EB:5D:14:95:49:CB:76:B6:5D:95:86:DF:0B:98:02:50:D0:09:71:7D:4E:23\r\na=setup:actpass\r\na=mid:1\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:12 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:11 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07\r\na=extmap:9 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendrecv\r\na=msid:stream_id video_label\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:100 VP9/90000\r\na=rtcp-fb:100 goog-remb\r\na=rtcp-fb:100 transport-cc\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 nack pli\r\na=fmtp:100 profile-id=2\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\na=rtpmap:127 AV1X/90000\r\na=rtcp-fb:127 goog-remb\r\na=rtcp-fb:127 transport-cc\r\na=rtcp-fb:127 ccm fir\r\na=rtcp-fb:127 nack\r\na=rtcp-fb:127 nack pli\r\na=rtpmap:123 rtx/90000\r\na=fmtp:123 apt=127\r\na=rtpmap:125 red/90000\r\na=rtpmap:122 rtx/90000\r\na=fmtp:122 apt=125\r\na=rtpmap:124 ulpfec/90000\r\na=ssrc-group:FID 1448162602 417219447\r\na=ssrc:1448162602 cname:oKHRFI62sJQkbFA6\r\na=ssrc:1448162602 msid:stream_id video_label\r\na=ssrc:1448162602 mslabel:stream_id\r\na=ssrc:1448162602 label:video_label\r\na=ssrc:417219447 cname:oKHRFI62sJQkbFA6\r\na=ssrc:417219447 msid:stream_id video_label\r\na=ssrc:417219447 mslabel:stream_id\r\na=ssrc:417219447 label:video_label\r\n",
+   "type" : "offer"
+}
+
+(openssl_certificate.cc:109): Returning certificate
+(p2p_transport_channel.cc:526): Set backup connection ping interval to 25000 milliseconds.
+(p2p_transport_channel.cc:535): Set ICE receiving timeout to 2500 milliseconds
+(p2p_transport_channel.cc:542): Set ping most likely connection to 0
+(p2p_transport_channel.cc:549): Set stable_writable_connection_ping_interval to 2500
+(p2p_transport_channel.cc:562): Set presume writable when fully relayed to 0
+(p2p_transport_channel.cc:580): Set regather_on_failed_networks_interval to 300000
+(p2p_transport_channel.cc:587): Set receiving_switching_delay to 1000
+(jsep_transport_controller.cc:1215): Creating DtlsSrtpTransport.
+(dtls_srtp_transport.cc:62): Setting RTCP Transport on 0 transport 0
+(dtls_srtp_transport.cc:67): Setting RTP Transport on 0 transport 540037e0
+(p2p_transport_channel.cc:526): Set backup connection ping interval to 25000 milliseconds.
+(p2p_transport_channel.cc:535): Set ICE receiving timeout to 2500 milliseconds
+(p2p_transport_channel.cc:542): Set ping most likely connection to 0
+(p2p_transport_channel.cc:549): Set stable_writable_connection_ping_interval to 2500
+(p2p_transport_channel.cc:562): Set presume writable when fully relayed to 0
+(p2p_transport_channel.cc:580): Set regather_on_failed_networks_interval to 300000
+(p2p_transport_channel.cc:587): Set receiving_switching_delay to 1000
+(jsep_transport_controller.cc:1215): Creating DtlsSrtpTransport.
+(dtls_srtp_transport.cc:62): Setting RTCP Transport on 1 transport 0
+(dtls_srtp_transport.cc:67): Setting RTP Transport on 1 transport 540061e0
+(p2p_transport_channel.cc:471): Received remote ICE parameters: ufrag=93Y3, renomination disabled
+(p2p_transport_channel.cc:471): Received remote ICE parameters: ufrag=93Y3, renomination disabled
+(webrtc_voice_engine.cc:1495): Setting voice channel options: AudioOptions {audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
+(webrtc_voice_engine.cc:315): WebRtcVoiceEngine::ApplyOptions: AudioOptions {audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
+(webrtc_voice_engine.cc:436): NetEq capacity is 200
+(webrtc_voice_engine.cc:442): NetEq fast mode? 0
+(webrtc_voice_engine.cc:448): NetEq minimum delay is 0
+(webrtc_voice_engine.cc:454): NetEq handle reordered packets? 0
+(webrtc_voice_engine.cc:474): Experimental ns is enabled? 0
+(audio_processing_impl.cc:526): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: {maximum_internal_processing_rate: 48000, multi_channel_render: 0, , multi_channel_capture: 0}, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 1 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: Rms, use_saturation_protector: 1, extra_saturation_margin_db: 2 } }, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 } }
+(webrtc_voice_engine.cc:1513): Set voice channel options. Current options: AudioOptions {audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
+(channel.cc:145): Created channel for 0
+(webrtc_video_engine.cc:585): CreateMediaChannel. Options: VideoOptions {}
+(channel.cc:145): Created channel for 1
+(peer_connection.cc:4794): Session: 1001983186071747856 Old state: kStable New state: kHaveRemoteOffer
+(channel.cc:881): Setting remote voice description
+(webrtc_voice_engine.cc:1311): WebRtcVoiceMediaChannel::SetSendParameters: {codecs: [AudioCodec[111:opus:48000:0:2], AudioCodec[103:ISAC:16000:0:1], AudioCodec[104:ISAC:32000:0:1], AudioCodec[9:G722:8000:0:1], AudioCodec[102:ILBC:8000:0:1], AudioCodec[0:PCMU:8000:0:1], AudioCodec[8:PCMA:8000:0:1], AudioCodec[106:CN:32000:0:1], AudioCodec[105:CN:16000:0:1], AudioCodec[13:CN:8000:0:1], AudioCodec[110:telephone-event:48000:0:1], AudioCodec[112:telephone-event:32000:0:1], AudioCodec[113:telephone-event:16000:0:1], AudioCodec[126:telephone-event:8000:0:1]], extensions: [{uri: urn:ietf:params:rtp-hdrext:ssrc-audio-level, id: 1}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}], extmap-allow-mixed: false, max_bandwidth_bps: -1, mid: 0, options: AudioOptions {}}
+(webrtc_voice_engine.cc:1712): Recreate all the receive streams because the send codec has changed.
+(webrtc_voice_engine.cc:2169): WebRtcVoiceMediaChannel::SetMaxSendBitrate.
+(webrtc_voice_engine.cc:1495): Setting voice channel options: AudioOptions {}
+(webrtc_voice_engine.cc:315): WebRtcVoiceEngine::ApplyOptions: AudioOptions {audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
+(webrtc_voice_engine.cc:436): NetEq capacity is 200
+(webrtc_voice_engine.cc:442): NetEq fast mode? 0
+(webrtc_voice_engine.cc:448): NetEq minimum delay is 0
+(webrtc_voice_engine.cc:454): NetEq handle reordered packets? 0
+(webrtc_voice_engine.cc:474): Experimental ns is enabled? 0
+(audio_processing_impl.cc:526): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: {maximum_internal_processing_rate: 48000, multi_channel_render: 0, , multi_channel_capture: 0}, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 1 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: Rms, use_saturation_protector: 1, extra_saturation_margin_db: 2 } }, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 } }
+(webrtc_voice_engine.cc:1513): Set voice channel options. Current options: AudioOptions {audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
+(webrtc_voice_engine.cc:1859): AddRecvStream: {id:audio_label;ssrcs:[3230054379];ssrc_groups:;cname:oKHRFI62sJQkbFA6;stream_ids:stream_id;}
+(delay_manager.cc:73): Delay histogram config: quantile=1041529569 forget_factor=32745 start_forget_weight=2
+(decision_logic.cc:55): NetEq decision logic settings: estimate_dtx_delay=0 time_stretch_cn=0 target_level_window_ms=100
+(neteq_impl.cc:144): NetEq config: sample_rate_hz=16000, enable_post_decode_vad=true, max_packets_in_buffer=200, min_delay_ms=0, enable_fast_accelerate=false, enable_muted_state=true, enable_rtx_handling=false
+(audio_receive_stream.cc:123): AudioReceiveStream: 3230054379
+(audio_receive_stream.cc:380): AudioReceiveStream::ConfigureStream: {rtp: {remote_ssrc: 3230054379, local_ssrc: 4195875351, transport_cc: on, nack: {rtp_history_ms: 0}, extensions: []}, rtcp_send_transport: (Transport), sync_group: stream_id}
+(channel.cc:681): Add remote ssrc: 3230054379
+(channel.cc:816): Changing voice state, recv=0 send=0
+(channel.cc:1064): Setting remote video description
+(webrtc_video_engine.cc:808): SetSendParameters: {codecs: [VideoCodec[96:VP8], VideoCodec[97:rtx], VideoCodec[98:VP9], VideoCodec[99:rtx], VideoCodec[100:VP9], VideoCodec[101:rtx], VideoCodec[127:AV1X], VideoCodec[123:rtx], VideoCodec[125:red], VideoCodec[122:rtx], VideoCodec[124:ulpfec]], conference_mode: no, extensions: [{uri: urn:ietf:params:rtp-hdrext:toffset, id: 14}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 12}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 11}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07, id: 8}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 9}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}], extmap-allow-mixed: false, max_bandwidth_bps: -1, mid: 1}
+(webrtc_video_engine.cc:751): WebRTC-FlexFEC-03 field trial is not enabled.
+(webrtc_video_engine.cc:816): Negotiated codec: VideoCodec[96:VP8]
+(webrtc_video_engine.cc:816): Negotiated codec: VideoCodec[98:VP9]
+(webrtc_video_engine.cc:816): Negotiated codec: VideoCodec[100:VP9]
+(webrtc_video_engine.cc:816): Negotiated codec: VideoCodec[127:AV1X]
+(webrtc_video_engine.cc:926): Set codec: VideoCodec[96:VP8]
+(webrtc_video_engine.cc:980): SetFeedbackOptions on all the receive streams because the send codec or RTCP mode has changed.
+(webrtc_video_engine.cc:1387): AddRecvStream: {id:video_label;ssrcs:[1448162602,417219447];ssrc_groups:{semantics:FID;ssrcs:[1448162602,417219447]};cname:oKHRFI62sJQkbFA6;stream_ids:stream_id;}
+(video_receive_stream2.cc:228): VideoReceiveStream2: {decoders: [{payload_type: 96, payload_name: VP8, codec_params: {}}, {payload_type: 98, payload_name: VP9, codec_params: {profile-id: 0}}, {payload_type: 100, payload_name: VP9, codec_params: {profile-id: 2}}, {payload_type: 102, payload_name: AV1X, codec_params: {}}], rtp: {remote_ssrc: 1448162602, local_ssrc: 1, rtcp_mode: RtcpMode::kReducedSize, rtcp_xr: {receiver_reference_time_report: off}, transport_cc: on, lntf: {enabled: false}, nack: {rtp_history_ms: 1000}, ulpfec_payload_type: 106, red_type: 104, rtx_ssrc: 417219447, rtx_payload_types: {97 (pt) -> 96 (apt), 99 (pt) -> 98 (apt), 101 (pt) -> 100 (apt), 103 (pt) -> 102 (apt), 105 (pt) -> 104 (apt), }, raw_payload_types: {}, extensions: []}, renderer: (renderer), render_delay_ms: 10, sync_group: stream_id, target_delay_ms: 0}
+(channel.cc:681): Add remote ssrc: 1448162602
+(channel.cc:965): Changing video state, send=0
+(peer_connection.cc:3254): Processing the MSIDs for MID=0 (streams=[stream_id]).
+(peer_connection.cc:3265): Processing the addition of a remote track for MID=0.
+(webrtc_voice_engine.cc:1959): SetOutputVolume() to 1 for recv stream with ssrc 3230054379
+(peer_connection.cc:3254): Processing the MSIDs for MID=1 (streams=[stream_id]).
+(peer_connection.cc:3265): Processing the addition of a remote track for MID=1.
+(webrtc_video_engine.cc:3335): Absent receive stream; ignoring clearing encoded frame sink for ssrc 0
+(webrtc_video_engine.cc:1532): SetSink: ssrc:1448162602 (ptr)
+(conductor.cc:308): OnAddTrack 7d49d28d-b681-4ea9-88af-d32ffd6645d4
+(conductor.cc:308): OnAddTrack c99f4210-5a0b-4bf2-b697-f35fc0a15281
+(peer_connection.cc:6498): 0 is not ready to use the remote candidate because the local or remote description is not set.
+(conductor.cc:597):  Received candidate :{
+   "candidate" : "candidate:3481569408 1 udp 2122260223 172.16.11.6 59920 typ host generation 0 ufrag 93Y3 network-id 1",
+   "sdpMLineIndex" : 0,
+   "sdpMid" : "0"
+}
+
+(peer_connection.cc:6498): 1 is not ready to use the remote candidate because the local or remote description is not set.
+(conductor.cc:597):  Received candidate :{
+   "candidate" : "candidate:3481569408 1 udp 2122260223 172.16.11.6 33084 typ host generation 0 ufrag 93Y3 network-id 1",
+   "sdpMLineIndex" : 1,
+   "sdpMid" : "1"
+}
+
+(peer_connection.cc:5971): Local and Remote descriptions must be applied to get the SSL Role of the session.
+(peer_connection.cc:5971): Local and Remote descriptions must be applied to get the SSL Role of the session.
+(conductor.cc:68): OnSuccess
+(dtls_srtp_transport.cc:62): Setting RTCP Transport on 0 transport 0
+(dtls_srtp_transport.cc:67): Setting RTP Transport on 0 transport 540037e0
+(p2p_transport_channel.cc:460): Set ICE ufrag: HgGc pwd: TkH3TTw8upOwUeSfq5pSPGtm on transport 0
+(dtls_transport.cc:377): DtlsTransport[0|1|__]: DTLS setup complete.
+(rtp_transceiver.cc:259): Changing transceiver (MID=0) current direction from <not set> to kSendRecv.
+(rtp_transceiver.cc:259): Changing transceiver (MID=1) current direction from <not set> to kSendRecv.
+(channel.cc:507): Channel enabled
+(channel.cc:816): Changing voice state, recv=0 send=0
+(channel.cc:507): Channel enabled
+(channel.cc:965): Changing video state, send=0
+(peer_connection.cc:4794): Session: 1001983186071747856 Old state: kHaveRemoteOffer New state: kStable
+(channel.cc:824): Setting local voice description
+(webrtc_voice_engine.cc:1356): WebRtcVoiceMediaChannel::SetRecvParameters: {codecs: [AudioCodec[111:opus:48000:0:2], AudioCodec[103:ISAC:16000:0:1], AudioCodec[104:ISAC:32000:0:1], AudioCodec[9:G722:8000:0:1], AudioCodec[102:ILBC:8000:0:1], AudioCodec[0:PCMU:8000:0:1], AudioCodec[8:PCMA:8000:0:1], AudioCodec[106:CN:32000:0:1], AudioCodec[105:CN:16000:0:1], AudioCodec[13:CN:8000:0:1], AudioCodec[110:telephone-event:48000:0:1], AudioCodec[112:telephone-event:32000:0:1], AudioCodec[113:telephone-event:16000:0:1], AudioCodec[126:telephone-event:8000:0:1]], extensions: [{uri: urn:ietf:params:rtp-hdrext:ssrc-audio-level, id: 1}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}]}
+(webrtc_voice_engine.cc:1523): Setting receive voice codecs.
+(audio_receive_stream.cc:380): AudioReceiveStream::ConfigureStream: {rtp: {remote_ssrc: 3230054379, local_ssrc: 4195875351, transport_cc: on, nack: {rtp_history_ms: 0}, extensions: []}, rtcp_send_transport: (Transport), sync_group: stream_id}
+(audio_receive_stream.cc:144): ~AudioReceiveStream: 3230054379
+(delay_manager.cc:73): Delay histogram config: quantile=1041529569 forget_factor=32745 start_forget_weight=2
+(decision_logic.cc:55): NetEq decision logic settings: estimate_dtx_delay=0 time_stretch_cn=0 target_level_window_ms=100
+(neteq_impl.cc:144): NetEq config: sample_rate_hz=16000, enable_post_decode_vad=true, max_packets_in_buffer=200, min_delay_ms=0, enable_fast_accelerate=false, enable_muted_state=true, enable_rtx_handling=false
+(audio_receive_stream.cc:123): AudioReceiveStream: 3230054379
+(audio_receive_stream.cc:380): AudioReceiveStream::ConfigureStream: {rtp: {remote_ssrc: 3230054379, local_ssrc: 4195875351, transport_cc: on, nack: {rtp_history_ms: 0}, extensions: [{uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}, {uri: urn:ietf:params:rtp-hdrext:ssrc-audio-level, id: 1}]}, rtcp_send_transport: (Transport), sync_group: stream_id}
+(webrtc_voice_engine.cc:1794): AddSendStream: {id:audio_label;ssrcs:[969695178];ssrc_groups:;cname:6CF3Haa3FsGBYtd3;stream_ids:stream_id;}
+(delay_manager.cc:73): Delay histogram config: quantile=1041529569 forget_factor=32745 start_forget_weight=2
+(decision_logic.cc:55): NetEq decision logic settings: estimate_dtx_delay=0 time_stretch_cn=0 target_level_window_ms=100
+(neteq_impl.cc:144): NetEq config: sample_rate_hz=16000, enable_post_decode_vad=true, max_packets_in_buffer=200, min_delay_ms=0, enable_fast_accelerate=false, enable_muted_state=false, enable_rtx_handling=false
+(audio_coding_module.cc:224): Created
+(audio_send_stream.cc:160): AudioSendStream: 969695178
+(audio_send_stream.cc:227): AudioSendStream::ConfigureStream: {rtp: {ssrc: 969695178, extmap-allow-mixed: false, extensions: [{uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}, {uri: urn:ietf:params:rtp-hdrext:ssrc-audio-level, id: 1}], c_name: 6CF3Haa3FsGBYtd3}, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: 32000, max_bitrate_bps: 32000, send_codec_spec: {nack_enabled: false, transport_cc_enabled: true, cng_payload_type: <unset>, payload_type: 111, format: {name: opus, clockrate_hz: 48000, num_channels: 2, parameters: {minptime: 10, useinbandfec: 1}}}}
+(audio_receive_stream.cc:144): ~AudioReceiveStream: 3230054379
+(delay_manager.cc:73): Delay histogram config: quantile=1041529569 forget_factor=32745 start_forget_weight=2
+(decision_logic.cc:55): NetEq decision logic settings: estimate_dtx_delay=0 time_stretch_cn=0 target_level_window_ms=100
+(neteq_impl.cc:144): NetEq config: sample_rate_hz=16000, enable_post_decode_vad=true, max_packets_in_buffer=200, min_delay_ms=0, enable_fast_accelerate=false, enable_muted_state=true, enable_rtx_handling=false
+(audio_receive_stream.cc:123): AudioReceiveStream: 3230054379
+(audio_receive_stream.cc:380): AudioReceiveStream::ConfigureStream: {rtp: {remote_ssrc: 3230054379, local_ssrc: 969695178, transport_cc: on, nack: {rtp_history_ms: 0}, extensions: [{uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}, {uri: urn:ietf:params:rtp-hdrext:ssrc-audio-level, id: 1}]}, rtcp_send_transport: (Transport), sync_group: stream_id}
+(channel.cc:635): Add send stream ssrc: 969695178
+(channel.cc:816): Changing voice state, recv=1 send=0
+(channel.cc:978): Setting local video description
+(webrtc_video_engine.cc:1160): SetRecvParameters: {codecs: [VideoCodec[96:VP8], VideoCodec[97:rtx], VideoCodec[98:VP9], VideoCodec[99:rtx], VideoCodec[100:VP9], VideoCodec[101:rtx], VideoCodec[127:AV1X], VideoCodec[123:rtx], VideoCodec[125:red], VideoCodec[122:rtx], VideoCodec[124:ulpfec]], extensions: [{uri: urn:ietf:params:rtp-hdrext:toffset, id: 14}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 12}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 11}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07, id: 8}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 9}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}]}
+(webrtc_video_engine.cc:1176): Changing recv codecs from {VideoCodec[96:VP8], VideoCodec[98:VP9], VideoCodec[100:VP9], VideoCodec[102:AV1X]} to {VideoCodec[96:VP8], VideoCodec[98:VP9], VideoCodec[100:VP9], VideoCodec[127:AV1X]}
+(webrtc_video_engine.cc:2896): MaybeRecreateWebRtcFlexfecStream (recv) because of SetRecvParameters
+(webrtc_video_engine.cc:2901): RecreateWebRtcVideoStream (recv) because of SetRecvParameters
+(video_receive_stream2.cc:270): ~VideoReceiveStream2: {decoders: [{payload_type: 96, payload_name: VP8, codec_params: {}}, {payload_type: 98, payload_name: VP9, codec_params: {profile-id: 0}}, {payload_type: 100, payload_name: VP9, codec_params: {profile-id: 2}}, {payload_type: 102, payload_name: AV1X, codec_params: {}}], rtp: {remote_ssrc: 1448162602, local_ssrc: 1, rtcp_mode: RtcpMode::kReducedSize, rtcp_xr: {receiver_reference_time_report: off}, transport_cc: on, lntf: {enabled: false}, nack: {rtp_history_ms: 1000}, ulpfec_payload_type: 106, red_type: 104, rtx_ssrc: 417219447, rtx_payload_types: {97 (pt) -> 96 (apt), 99 (pt) -> 98 (apt), 101 (pt) -> 100 (apt), 103 (pt) -> 102 (apt), 105 (pt) -> 104 (apt), }, raw_payload_types: {}, extensions: []}, renderer: (renderer), render_delay_ms: 10, sync_group: stream_id, target_delay_ms: 0}
+(receive_statistics_proxy2.cc:495): Frames decoded 0
+WebRTC.Video.DroppedFrames.Receiver 0
+
+(video_render_frames.cc:47): WebRTC.Video.DroppedFrames.RenderQueue 0
+(video_receive_stream2.cc:228): VideoReceiveStream2: {decoders: [{payload_type: 96, payload_name: VP8, codec_params: {}}, {payload_type: 98, payload_name: VP9, codec_params: {profile-id: 0}}, {payload_type: 100, payload_name: VP9, codec_params: {profile-id: 2}}, {payload_type: 127, payload_name: AV1X, codec_params: {}}], rtp: {remote_ssrc: 1448162602, local_ssrc: 1, rtcp_mode: RtcpMode::kReducedSize, rtcp_xr: {receiver_reference_time_report: off}, transport_cc: on, lntf: {enabled: false}, nack: {rtp_history_ms: 1000}, ulpfec_payload_type: 124, red_type: 125, rtx_ssrc: 417219447, rtx_payload_types: {97 (pt) -> 96 (apt), 99 (pt) -> 98 (apt), 101 (pt) -> 100 (apt), 122 (pt) -> 125 (apt), 123 (pt) -> 127 (apt), }, raw_payload_types: {}, extensions: [{uri: http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07, id: 8}, {uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 9}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 12}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 11}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}, {uri: urn:ietf:params:rtp-hdrext:toffset, id: 14}]}, renderer: (renderer), render_delay_ms: 10, sync_group: stream_id, target_delay_ms: 0}
+(webrtc_video_engine.cc:1277): AddSendStream: {id:video_label;ssrcs:[852632439,1257243719];ssrc_groups:{semantics:FID;ssrcs:[852632439,1257243719]};cname:6CF3Haa3FsGBYtd3;stream_ids:stream_id;}
+(webrtc_video_engine.cc:2146): RecreateWebRtcStream (send) because of SetCodec.
+(alr_experiment.cc:79): Using ALR experiment settings: pacing factor: 1, max pacer queue length: 2875, ALR bandwidth usage percent: 80, ALR start budget level percent: 40, ALR end budget level percent: -60, ALR experiment group ID: 3
+(video_stream_encoder.cc:1929): Automatic animation detection experiment is disabled.
+(balanced_degradation_settings.cc:96): Unsupported size, value ignored.
+(balanced_degradation_settings.cc:96): Unsupported size, value ignored.
+(video_send_stream_impl.cc:231): VideoSendStreamInternal: {encoder_settings: { experiment_cpu_load_estimator: off}}, rtp: {ssrcs: [852632439], rids: [], mid: '1', rtcp_mode: RtcpMode::kReducedSize, max_packet_size: 1200, extmap-allow-mixed: false, extensions: [{uri: http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07, id: 8}, {uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 9}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 12}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 11}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}], lntf: {enabled: false}, nack: {rtp_history_ms: 1000}, ulpfec: {ulpfec_payload_type: 124, red_payload_type: 125, red_rtx_payload_type: 122}, payload_name: VP8, payload_type: 96, raw_payload: false, flexfec: {payload_type: -1, ssrc: 0, protected_media_ssrcs: []}, rtx: {ssrcs: [1257243719], payload_type: 97}, c_name: 6CF3Haa3FsGBYtd3}, rtcp_report_interval_ms: 1000, send_transport: (Transport), render_delay_ms: 0, target_delay_ms: 0, suspend_below_min_bitrate: off}
+(video_send_stream.cc:177): VideoSendStream::Stop
+(video_stream_encoder.cc:419): ConfigureEncoder requested.
+(video_send_stream_impl.cc:386): VideoSendStream::Stop
+(webrtc_video_engine.cc:1324): SetLocalSsrc on all the receive streams because we added a send stream.
+(webrtc_video_engine.cc:2838): RecreateWebRtcStream (recv) because of SetLocalSsrc; local_ssrc=852632439
+(video_receive_stream2.cc:270): ~VideoReceiveStream2: {decoders: [{payload_type: 96, payload_name: VP8, codec_params: {}}, {payload_type: 98, payload_name: VP9, codec_params: {profile-id: 0}}, {payload_type: 100, payload_name: VP9, codec_params: {profile-id: 2}}, {payload_type: 127, payload_name: AV1X, codec_params: {}}], rtp: {remote_ssrc: 1448162602, local_ssrc: 1, rtcp_mode: RtcpMode::kReducedSize, rtcp_xr: {receiver_reference_time_report: off}, transport_cc: on, lntf: {enabled: false}, nack: {rtp_history_ms: 1000}, ulpfec_payload_type: 124, red_type: 125, rtx_ssrc: 417219447, rtx_payload_types: {97 (pt) -> 96 (apt), 99 (pt) -> 98 (apt), 101 (pt) -> 100 (apt), 122 (pt) -> 125 (apt), 123 (pt) -> 127 (apt), }, raw_payload_types: {}, extensions: [{uri: http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07, id: 8}, {uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 9}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 12}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 11}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}, {uri: urn:ietf:params:rtp-hdrext:toffset, id: 14}]}, renderer: (renderer), render_delay_ms: 10, sync_group: stream_id, target_delay_ms: 0}
+(receive_statistics_proxy2.cc:495): Frames decoded 0
+WebRTC.Video.DroppedFrames.Receiver 0
+
+(video_render_frames.cc:47): WebRTC.Video.DroppedFrames.RenderQueue 0
+(video_receive_stream2.cc:228): VideoReceiveStream2: {decoders: [{payload_type: 96, payload_name: VP8, codec_params: {}}, {payload_type: 98, payload_name: VP9, codec_params: {profile-id: 0}}, {payload_type: 100, payload_name: VP9, codec_params: {profile-id: 2}}, {payload_type: 127, payload_name: AV1X, codec_params: {}}], rtp: {remote_ssrc: 1448162602, local_ssrc: 852632439, rtcp_mode: RtcpMode::kReducedSize, rtcp_xr: {receiver_reference_time_report: off}, transport_cc: on, lntf: {enabled: false}, nack: {rtp_history_ms: 1000}, ulpfec_payload_type: 124, red_type: 125, rtx_ssrc: 417219447, rtx_payload_types: {97 (pt) -> 96 (apt), 99 (pt) -> 98 (apt), 101 (pt) -> 100 (apt), 122 (pt) -> 125 (apt), 123 (pt) -> 127 (apt), }, raw_payload_types: {}, extensions: [{uri: http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07, id: 8}, {uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 9}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 12}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 11}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}, {uri: urn:ietf:params:rtp-hdrext:toffset, id: 14}]}, renderer: (renderer), render_delay_ms: 10, sync_group: stream_id, target_delay_ms: 0}
+(channel.cc:635): Add send stream ssrc: 852632439
+(video_send_stream.cc:177): VideoSendStream::Stop
+(channel.cc:965): Changing video state, send=0
+(video_send_stream_impl.cc:386): VideoSendStream::Stop
+(peer_connection.cc:4698): Changing IceConnectionState 0 => 1
+(jsep_transport_controller.cc:342): Not adding candidate because the JsepTransport doesn't exist. Ignore it.
+(peer_connection.cc:5950): Non-rejected SCTP m= section is needed to get the SSL Role of the SCTP transport.
+(webrtc_voice_engine.cc:1495): Setting voice channel options: AudioOptions {}
+(webrtc_voice_engine.cc:315): WebRtcVoiceEngine::ApplyOptions: AudioOptions {audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
+(webrtc_voice_engine.cc:436): NetEq capacity is 200
+(webrtc_voice_engine.cc:442): NetEq fast mode? 0
+(webrtc_voice_engine.cc:448): NetEq minimum delay is 0
+(webrtc_voice_engine.cc:454): NetEq handle reordered packets? 0
+(webrtc_voice_engine.cc:474): Experimental ns is enabled? 0
+(audio_processing_impl.cc:526): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: {maximum_internal_processing_rate: 48000, multi_channel_render: 0, , multi_channel_capture: 0}, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 1 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: Rms, use_saturation_protector: 1, extra_saturation_margin_db: 2 } }, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 } }
+(webrtc_voice_engine.cc:1513): Set voice channel options. Current options: AudioOptions {audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
+(webrtc_video_engine.cc:1236): SetVideoSend (ssrc= 852632439, options: VideoOptions {is_screencast : false, }, source = (source))
+(video_stream_encoder.cc:419): ConfigureEncoder requested.
+(basic_port_allocator.cc:375): Start getting ports with turn_port_prune_policy 0
+(basic_port_allocator.cc:111): Filtered out ignored networks:
+(basic_port_allocator.cc:113): Net[lo:0:0:0:x:x:x:x:x/128:Loopback:id=3]
+(basic_port_allocator.cc:113): Net[lo:127.0.0.x/8:Loopback:id=2]
+(basic_port_allocator.cc:861): Network manager has started
+(basic_port_allocator.cc:111): Filtered out ignored networks:
+(basic_port_allocator.cc:113): Net[lo:0:0:0:x:x:x:x:x/128:Loopback:id=3]
+(basic_port_allocator.cc:113): Net[lo:127.0.0.x/8:Loopback:id=2]
+(basic_port_allocator.cc:776): Allocate ports on 1 networks
+(basic_port_allocator.cc:1353): Net[eth0:172.16.11.x/24:Ethernet:id=1]: Allocation Phase=Udp
+(port.cc:186): Port[540198d0::1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Port created with network cost 0
+(basic_port_allocator.cc:1424): AllocationSequence: UDPPort will be handling the STUN candidate generation.
+(basic_port_allocator.cc:885): Adding allocated port for 0
+(basic_port_allocator.cc:906): Port[540198d0:0:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Added port to allocator
+(basic_port_allocator.cc:924): Port[540198d0:0:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Gathered candidate: Cand[:3481569408:1:udp:2122260223:172.16.11.x:59757:local::0:HgGc:TkH3TTw8upOwUeSfq5pSPGtm:1:0:0]
+(basic_port_allocator.cc:957): Port[540198d0:0:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Port ready.
+(connection.cc:312): Conn[54019e20:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->FvRKHPZ9:1:2122260223:local:udp:172.16.11.x:59920|C--W|-|0|0|9115038255631187454|-]: Connection created
+(p2p_transport_channel.cc:1382): Channel[0|1|__]: Created connection with origin: 2, total: 1
+(conductor.cc:68): OnSuccess
+(p2p_transport_channel.cc:1817): Channel[0|1|__]: Transport channel state changed from 0 to 2
+(jsep_transport_controller.cc:1421): 0 Transport 1 state changed. Check if state is complete.
+(jsep_transport_controller.cc:1421): 0 Transport 1 state changed. Check if state is complete.
+(p2p_transport_channel.cc:1616): Channel[0|1|__]: Have a pingable connection for the first time; starting to ping.
+(stun_port.cc:439): Port[540198d0:0:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Starting STUN host lookup for stun.l.google.com:19302
+(connection.cc:1167): Conn[54019e20:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->FvRKHPZ9:1:2122260223:local:udp:172.16.11.x:59920|C--W|-|0|0|9115038255631187454|-]: Sent STUN BINDING request, id=3965654f5551696d6a49386e, use_candidate=0, nomination=0
+(jsep_transport_controller.cc:342): Not adding candidate because the JsepTransport doesn't exist. Ignore it.
+(conductor.cc:597):  Received candidate :{
+   "candidate" : "candidate:1725630293 1 udp 1686052607 20.83.237.85 33084 typ srflx raddr 172.16.11.6 rport 33084 generation 0 ufrag 93Y3 network-id 1",
+   "sdpMLineIndex" : 1,
+   "sdpMid" : "1"
+}
+
+(connection.cc:1082): Conn[54019e20:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->FvRKHPZ9:1:2122260223:local:udp:172.16.11.x:59920|C--I|-|0|0|9115038255631187454|-]: Received STUN BINDING response, id=3965654f5551696d6a49386e, code=0, rtt=0, pings_since_last_response=3965654f5551696d6a49386e 
+(connection.cc:312): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--W|-|0|0|7241540810645061118|-]: Connection created
+(p2p_transport_channel.cc:1382): Channel[0|1|__]: Created connection with origin: 2, total: 2
+(p2p_transport_channel.cc:275): Switching selected connection due to: new candidate pairs created from a new remote candidate
+(p2p_transport_channel.cc:1731): Channel[0|1|__]: New selected connection: Conn[54019e20:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->FvRKHPZ9:1:2122260223:local:udp:172.16.11.x:59920|CRWS|S|0|0|9115038255631187454|0]
+(channel.cc:352): Network route was changed.
+(channel.cc:352): Network route was changed.
+(dtls_transport.cc:828): DtlsTransport[0|1|__]: configuring DTLS handshake timeout 50 based on ICE RTT 0
+(openssl_stream_adapter.cc:793): BeginSSL with peer.
+(rtp_transport_controller_send.cc:294): Network route changed on transport 0: new_route = [ connected: 1 local: [ 1/1 Ethernet turn: 0 ] remote: [ 1/1 Ethernet turn: 0 ] packet_overhead_bytes: 28 ]
+(dtls_transport.cc:733): DtlsTransport[0|1|__]: DtlsTransport: Started DTLS handshake
+(srtp_transport.cc:366): The params in SRTP transport are reset.
+(p2p_transport_channel.cc:1817): Channel[0|1|RW]: Transport channel state changed from 2 to 1
+(jsep_transport_controller.cc:1421): 0 Transport 1 state changed. Check if state is complete.
+(jsep_transport_controller.cc:1421): 0 Transport 1 state changed. Check if state is complete.
+(basic_port_allocator.cc:1140): All candidates gathered for 0:1:0
+(p2p_transport_channel.cc:933): P2PTransportChannel: 0, component 1 gathering complete
+(conductor.cc:597):  Received candidate :{
+   "candidate" : "candidate:1725630293 1 udp 1686052607 20.83.237.85 59920 typ srflx raddr 172.16.11.6 rport 59920 generation 0 ufrag 93Y3 network-id 1",
+   "sdpMLineIndex" : 0,
+   "sdpMid" : "0"
+}
+
+(peer_connection.cc:4717): Changing standardized IceConnectionState 0 => 1
+(conductor.cc:320): OnIceCandidate 0
+(peer_connection.cc:4717): Changing standardized IceConnectionState 1 => 2
+(thread.cc:787): Waiting for the thread to join, but blocking calls have been disallowed
+(openssl_stream_adapter.cc:1074): Accepted peer certificate.
+(dtls_transport.cc:661): DtlsTransport[0|1|__]: DTLS handshake complete.
+(jsep_transport_controller.cc:1344):  Transport 0 writability changed to 1.
+(dtls_srtp_transport.cc:220): Extracting keys from transport: 0
+(call.cc:1056): UpdateAggregateNetworkState: aggregate_state change to up
+(peer_connection.cc:6322): Changing to ICE connected state because all transports are writable.
+(peer_connection.cc:4698): Changing IceConnectionState 1 => 2
+(rtp_transport_controller_send.cc:585): Creating fallback congestion controller
+(alr_experiment.cc:79): Using ALR experiment settings: pacing factor: 1, max pacer queue length: 2875, ALR bandwidth usage percent: 80, ALR start budget level percent: 40, ALR end budget level percent: -60, ALR experiment group ID: 3
+(trendline_estimator.cc:185): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:20 and no network state predictor
+(trendline_estimator.cc:185): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:20 and no network state predictor
+(aimd_rate_control.cc:113): Using aimd rate control with back off factor 0.85
+(delay_based_bwe.cc:120): Initialized DelayBasedBwe with small packet filtering smoothing:0.1,fraction_large:1,large:0 bytes,small:0 bytes, separate audio overuse detectionenabled:false,packet_threshold:10,time_threshold:1 s and alr limited backoff disabled
+(delay_based_bwe.cc:356): BWE Setting start bitrate to: 300 kbps
+(probe_controller.cc:280): Measured bitrate: 300000 Minimum to probe further: 1260000
+(bitrate_prober.cc:112): Probe cluster (bitrate:min bytes:min packets): (900000:1688:5)
+(bitrate_prober.cc:112): Probe cluster (bitrate:min bytes:min packets): (1800000:3375:5)
+(bitrate_allocator.cc:394): Current BWE 300000
+(srtp_transport.cc:311): SRTP activated with negotiated parameters: send cipher_suite 1 recv cipher_suite 1
+(channel.cc:537): Channel writable (0) for the first time
+(channel.cc:537): Channel writable (1) for the first time
+(webrtc_voice_engine.cc:315): WebRtcVoiceEngine::ApplyOptions: AudioOptions {audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, }
+(webrtc_voice_engine.cc:436): NetEq capacity is 200
+(webrtc_voice_engine.cc:442): NetEq fast mode? 0
+(webrtc_voice_engine.cc:448): NetEq minimum delay is 0
+(webrtc_voice_engine.cc:454): NetEq handle reordered packets? 0
+(webrtc_voice_engine.cc:474): Experimental ns is enabled? 0
+(audio_processing_impl.cc:526): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: {maximum_internal_processing_rate: 48000, multi_channel_render: 0, , multi_channel_capture: 0}, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 1 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: Rms, use_saturation_protector: 1, extra_saturation_margin_db: 2 } }, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 } }
+(bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 32 kbps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 32 kbps
+(channel.cc:816): Changing voice state, recv=1 send=1
+(video_send_stream.cc:148): UpdateActiveSimulcastLayers: {1}
+(bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 32 kbps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 10032 kbps
+(video_stream_encoder.cc:1699): Video suspend state changed to: not suspended
+(channel.cc:965): Changing video state, send=1
+(basic_port_allocator.cc:924): Port[540198d0:0:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Gathered candidate: Cand[:1725630293:1:udp:1686052607:20.83.237.x:59757:stun:172.16.11.6:59757:HgGc:TkH3TTw8upOwUeSfq5pSPGtm:1:0:0]
+(basic_port_allocator.cc:929): Discarding candidate because port is already done gathering.
+(basic_port_allocator.cc:1065): Port[540198d0:0:1:0:local:Net[eth0:172.16.11.x/24:Ethernet:id=1]]: Port completed gathering candidates.
+(rtp_sender_audio.cc:309): First audio RTP packet sent to pacer
+(rtp_video_stream_receiver.cc:682): Packet received on SSRC: 1448162602 with payload type: 125, timestamp: 496628416, sequence number: 22457, arrival time: 1698690708427, abs send time: 13128434
+(decoder_database.cc:141): Initializing decoder with payload type '96'.
+(video_frame_writer.cc:80): FRAME WRITE: 218354122213
+(video_frame_writer.cc:80): FRAME WRITE: 218354148559
+(video_frame_writer.cc:80): FRAME WRITE: 218354161018
+(connection.cc:1167): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--W|-|0|0|7241540810645061118|-]: Sent STUN BINDING request, id=54596c53547278456245304d, use_candidate=0, nomination=0
+(connection.cc:1167): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--I|-|0|0|7241540810645061118|-]: Sent STUN BINDING request, id=70767356456c7a7a39737a79, use_candidate=0, nomination=0
+(video_frame_writer.cc:80): FRAME WRITE: 218354225782
+(connection.cc:1167): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--I|-|0|0|7241540810645061118|-]: Sent STUN BINDING request, id=4e7770334f6c53476b6c646f, use_candidate=0, nomination=0
+(video_frame_writer.cc:80): FRAME WRITE: 218354293110
+(video_frame_writer.cc:80): FRAME WRITE: 218354355157
+(video_frame_writer.cc:80): FRAME WRITE: 218354418117
+(video_frame_writer.cc:80): FRAME WRITE: 218354449377
+(video_frame_writer.cc:80): FRAME WRITE: 218354482918
+(video_frame_writer.cc:80): FRAME WRITE: 218354514280
+(video_frame_writer.cc:80): FRAME WRITE: 218354547876
+(video_frame_writer.cc:80): FRAME WRITE: 218354580444
+(video_frame_writer.cc:80): FRAME WRITE: 218354614984
+(video_frame_writer.cc:80): FRAME WRITE: 218354647259
+(video_frame_writer.cc:80): FRAME WRITE: 218354679721
+(video_frame_writer.cc:80): FRAME WRITE: 218354714491
+(video_frame_writer.cc:80): FRAME WRITE: 218354748044
+(video_frame_writer.cc:80): FRAME WRITE: 218354781467
+(video_frame_writer.cc:80): FRAME WRITE: 218354815030
+(connection.cc:1167): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--I|-|0|0|7241540810645061118|-]: Sent STUN BINDING request, id=746a3735794e5a7469554f30, use_candidate=0, nomination=0
+(video_frame_writer.cc:80): FRAME WRITE: 218354847398
+(video_frame_writer.cc:80): FRAME WRITE: 218354881902
+(video_frame_writer.cc:80): FRAME WRITE: 218354915280
+(video_frame_writer.cc:80): FRAME WRITE: 218354949932
+(video_frame_writer.cc:80): FRAME WRITE: 218354982285
+(video_frame_writer.cc:80): FRAME WRITE: 218355016948
+(video_frame_writer.cc:80): FRAME WRITE: 218355049439
+(probe_controller.cc:378): kWaitingForProbingResult: timeout
+(video_frame_writer.cc:80): FRAME WRITE: 218355083892
+(video_frame_writer.cc:80): FRAME WRITE: 218355116475
+(video_frame_writer.cc:80): FRAME WRITE: 218355149722
+(video_frame_writer.cc:80): FRAME WRITE: 218355182311
+(video_frame_writer.cc:80): FRAME WRITE: 218355216801
+(video_frame_writer.cc:80): FRAME WRITE: 218355249268
+(video_frame_writer.cc:80): FRAME WRITE: 218355282763
+(video_frame_writer.cc:80): FRAME WRITE: 218355315177
+(video_frame_writer.cc:80): FRAME WRITE: 218355351709
+(video_frame_writer.cc:80): FRAME WRITE: 218355384283
+(video_frame_writer.cc:80): FRAME WRITE: 218355417726
+(video_frame_writer.cc:80): FRAME WRITE: 218355450164
+(video_frame_writer.cc:80): FRAME WRITE: 218355483824
+(video_frame_writer.cc:80): FRAME WRITE: 218355517330
+(video_frame_writer.cc:80): FRAME WRITE: 218355550723
+(video_frame_writer.cc:80): FRAME WRITE: 218355583404
+(video_frame_writer.cc:80): FRAME WRITE: 218355617966
+(video_frame_writer.cc:80): FRAME WRITE: 218355650465
+(video_frame_writer.cc:80): FRAME WRITE: 218355684931
+(video_frame_writer.cc:80): FRAME WRITE: 218355717463
+(video_frame_writer.cc:80): FRAME WRITE: 218355752071
+(video_frame_writer.cc:80): FRAME WRITE: 218355784491
+(video_frame_writer.cc:80): FRAME WRITE: 218355818611
+(connection.cc:1167): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--I|-|0|0|7241540810645061118|-]: Sent STUN BINDING request, id=6a4f55656568495a6e576144, use_candidate=0, nomination=0
+(video_frame_writer.cc:80): FRAME WRITE: 218355851318
+(video_frame_writer.cc:80): FRAME WRITE: 218355885777
+(video_frame_writer.cc:80): FRAME WRITE: 218355918382
+(block_processor.cc:179): Delay changed to 24 at block 465
+(video_frame_writer.cc:80): FRAME WRITE: 218355951927
+(video_frame_writer.cc:80): FRAME WRITE: 218355985339
+(video_frame_writer.cc:80): FRAME WRITE: 218356018837
+(video_send_stream_impl.cc:408): SignalEncoderTimedOut, Encoder timed out.
+(bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 32 kbps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 32 kbps
+(video_frame_writer.cc:80): FRAME WRITE: 218356052354
+(video_frame_writer.cc:80): FRAME WRITE: 218356085759
+(video_frame_writer.cc:80): FRAME WRITE: 218356118390
+(video_frame_writer.cc:80): FRAME WRITE: 218356152831
+(video_frame_writer.cc:80): FRAME WRITE: 218356186220
+(video_frame_writer.cc:80): FRAME WRITE: 218356220826
+(video_frame_writer.cc:80): FRAME WRITE: 218356253338
+(video_frame_writer.cc:80): FRAME WRITE: 218356287787
+(video_frame_writer.cc:80): FRAME WRITE: 218356320199
+(video_frame_writer.cc:80): FRAME WRITE: 218356354834
+(video_frame_writer.cc:80): FRAME WRITE: 218356386260
+(video_frame_writer.cc:80): FRAME WRITE: 218356420784
+(video_frame_writer.cc:80): FRAME WRITE: 218356454222
+(video_frame_writer.cc:80): FRAME WRITE: 218356487823
+(video_frame_writer.cc:80): FRAME WRITE: 218356520357
+(video_frame_writer.cc:80): FRAME WRITE: 218356553851
+(video_frame_writer.cc:80): FRAME WRITE: 218356587358
+(video_frame_writer.cc:80): FRAME WRITE: 218356620939
+(video_frame_writer.cc:80): FRAME WRITE: 218356653520
+(video_frame_writer.cc:80): FRAME WRITE: 218356687891
+(video_frame_writer.cc:80): FRAME WRITE: 218356720494
+(video_frame_writer.cc:80): FRAME WRITE: 218356756065
+(video_frame_writer.cc:80): FRAME WRITE: 218356788506
+(connection.cc:1167): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--I|-|0|0|7241540810645061118|-]: Sent STUN BINDING request, id=5839794d4959675263304767, use_candidate=0, nomination=0
+(video_frame_writer.cc:80): FRAME WRITE: 218356821155
+(video_frame_writer.cc:80): FRAME WRITE: 218356854567
+(video_frame_writer.cc:80): FRAME WRITE: 218356887066
+(video_frame_writer.cc:80): FRAME WRITE: 218356921406
+(video_frame_writer.cc:80): FRAME WRITE: 218356956106
+(video_frame_writer.cc:80): FRAME WRITE: 218356988470
+(video_frame_writer.cc:80): FRAME WRITE: 218357023049
+(video_frame_writer.cc:80): FRAME WRITE: 218357055547
+(video_frame_writer.cc:80): FRAME WRITE: 218357089990
+(video_frame_writer.cc:80): FRAME WRITE: 218357122580
+(video_frame_writer.cc:80): FRAME WRITE: 218357156076
+(video_frame_writer.cc:80): FRAME WRITE: 218357189615
+(video_frame_writer.cc:80): FRAME WRITE: 218357222107
+(video_frame_writer.cc:80): FRAME WRITE: 218357256594
+(video_frame_writer.cc:80): FRAME WRITE: 218357290252
+(connection.cc:1167): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--I|-|0|0|7241540810645061118|-]: Sent STUN BINDING request, id=51394f4b514b46444e777558, use_candidate=0, nomination=0
+(video_frame_writer.cc:80): FRAME WRITE: 218357323817
+(video_frame_writer.cc:80): FRAME WRITE: 218357356404
+(video_frame_writer.cc:80): FRAME WRITE: 218357390780
+(block_processor.cc:179): Delay changed to 0 at block 837
+(video_frame_writer.cc:80): FRAME WRITE: 218357423422
+(video_frame_writer.cc:80): FRAME WRITE: 218357456942
+(video_frame_writer.cc:80): FRAME WRITE: 218357490339
+(video_frame_writer.cc:80): FRAME WRITE: 218357524851
+(video_frame_writer.cc:80): FRAME WRITE: 218357558384
+(video_frame_writer.cc:80): FRAME WRITE: 218357593062
+(video_frame_writer.cc:80): FRAME WRITE: 218357626542
+(video_frame_writer.cc:80): FRAME WRITE: 218357660113
+(video_frame_writer.cc:80): FRAME WRITE: 218357692426
+(video_frame_writer.cc:80): FRAME WRITE: 218357726909
+(video_frame_writer.cc:80): FRAME WRITE: 218357759350
+(video_frame_writer.cc:80): FRAME WRITE: 218357793147
+(connection.cc:1167): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--I|-|0|0|7241540810645061118|-]: Sent STUN BINDING request, id=477a442b7046357a744e6b58, use_candidate=0, nomination=0
+(video_frame_writer.cc:80): FRAME WRITE: 218357826479
+(video_frame_writer.cc:80): FRAME WRITE: 218357860028
+(video_frame_writer.cc:80): FRAME WRITE: 218357894414
+(video_frame_writer.cc:80): FRAME WRITE: 218357927954
+(video_frame_writer.cc:80): FRAME WRITE: 218357960569
+(video_frame_writer.cc:80): FRAME WRITE: 218357994169
+(video_frame_writer.cc:80): FRAME WRITE: 218358027699
+(video_frame_writer.cc:80): FRAME WRITE: 218358061019
+(video_frame_writer.cc:80): FRAME WRITE: 218358093647
+(video_frame_writer.cc:80): FRAME WRITE: 218358127094
+(video_frame_writer.cc:80): FRAME WRITE: 218358161649
+(video_frame_writer.cc:80): FRAME WRITE: 218358195090
+(video_frame_writer.cc:80): FRAME WRITE: 218358227705
+(video_frame_writer.cc:80): FRAME WRITE: 218358260993
+(video_frame_writer.cc:80): FRAME WRITE: 218358293633
+(remote_ntp_time_estimator.cc:86): RTP timestamp: 497009476 in NTP clock: 3907679512648 estimated time in receiver NTP clock: 3907679512648
+(connection.cc:1167): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--I|-|0|0|7241540810645061118|-]: Sent STUN BINDING request, id=485a7962434a516442693968, use_candidate=0, nomination=0
+(video_frame_writer.cc:80): FRAME WRITE: 218358327995
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218358360661
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218358393097
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218358426602
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218358462045
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218358494549
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218358528038
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218358560624
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218358594283
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218358627701
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218358660181
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 24
+(video_frame_writer.cc:80): FRAME WRITE: 218358693678
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 24
+(video_frame_writer.cc:80): FRAME WRITE: 218358726248
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 24
+(video_frame_writer.cc:80): FRAME WRITE: 218358760676
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 24
+(video_frame_writer.cc:80): FRAME WRITE: 218358794221
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 24
+(video_frame_writer.cc:80): FRAME WRITE: 218358827771
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 24
+(video_frame_writer.cc:80): FRAME WRITE: 218358860244
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 24
+(video_frame_writer.cc:80): FRAME WRITE: 218358893705
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 24
+(video_frame_writer.cc:80): FRAME WRITE: 218358927223
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 24
+(video_frame_writer.cc:80): FRAME WRITE: 218358960774
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 24
+(video_frame_writer.cc:80): FRAME WRITE: 218358993305
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218359027828
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218359062405
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218359095781
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218359128358
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218359161733
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218359194395
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218359228840
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 24
+(video_frame_writer.cc:80): FRAME WRITE: 218359261392
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218359294821
+(connection.cc:1167): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--I|-|0|0|7241540810645061118|-]: Sent STUN BINDING request, id=76667930674a4a4936587845, use_candidate=0, nomination=0
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 24
+(video_frame_writer.cc:80): FRAME WRITE: 218359326356
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 24
+(video_frame_writer.cc:80): FRAME WRITE: 218359360887
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 24
+(video_frame_writer.cc:80): FRAME WRITE: 218359394443
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218359428072
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 24
+(video_frame_writer.cc:80): FRAME WRITE: 218359460398
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 24
+(video_frame_writer.cc:80): FRAME WRITE: 218359494030
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 24
+(video_frame_writer.cc:80): FRAME WRITE: 218359527469
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 24
+(video_frame_writer.cc:80): FRAME WRITE: 218359560980
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 24
+(video_frame_writer.cc:80): FRAME WRITE: 218359593678
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 24
+(video_frame_writer.cc:80): FRAME WRITE: 218359627504
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218359661101
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218359695561
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218359729175
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218359761603
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218359795144
+(connection.cc:1167): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--I|-|0|0|7241540810645061118|-]: Sent STUN BINDING request, id=2f395a596d505654317a382b, use_candidate=0, nomination=0
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218359827692
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218359861161
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218359895754
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218359928328
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218359961706
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218359995282
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218360028820
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218360061218
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218360094787
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218360127301
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218360161974
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218360195471
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218360229010
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218360261591
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218360296120
+(connection.cc:1167): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--I|-|0|0|7241540810645061118|-]: Sent STUN BINDING request, id=376c6a426630702f32333361, use_candidate=0, nomination=0
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218360328721
+(remote_ntp_time_estimator.cc:86): RTP timestamp: 1417786274 in NTP clock: 3907679514662 estimated time in receiver NTP clock: 3907679514663
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218360362121
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218360394878
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218360428251
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218360462896
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218360496408
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218360529862
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218360562391
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218360597023
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218360629539
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218360662998
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218360695546
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218360729152
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218360763446
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218360797898
+(connection.cc:1167): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--I|-|0|0|7241540810645061118|-]: Sent STUN BINDING request, id=4e7a4a2b6b5a535733347331, use_candidate=0, nomination=0
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218360830525
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218360863979
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218360897395
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 28
+(video_frame_writer.cc:80): FRAME WRITE: 218360931081
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218360962317
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218360996957
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218361029513
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218361063876
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218361096340
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218361129785
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218361162249
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218361196749
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218361230247
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218361262786
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218361296267
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218361328738
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218361363086
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218361396717
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218361430117
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218361462555
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218361497165
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218361529641
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218361563083
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218361595543
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218361629216
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218361662620
+(video_frame_writer.cc:80): FRAME WRITE: 218361697209
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218361730750
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 28
+(video_frame_writer.cc:80): FRAME WRITE: 218361764186
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218361797595
+(connection.cc:1167): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--I|-|0|0|7241540810645061118|-]: Sent STUN BINDING request, id=76764f78547a44566b566d37, use_candidate=0, nomination=0
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 28
+(video_frame_writer.cc:80): FRAME WRITE: 218361831105
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218361863689
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 28
+(video_frame_writer.cc:80): FRAME WRITE: 218361897197
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218361929745
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 28
+(video_frame_writer.cc:80): FRAME WRITE: 218361964166
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218361997682
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 28
+(video_frame_writer.cc:80): FRAME WRITE: 218362031254
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218362063645
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 28
+(video_frame_writer.cc:80): FRAME WRITE: 218362098108
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218362130468
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218362162906
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218362196545
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218362230026
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218362263413
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218362296994
+(connection.cc:1167): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--I|-|0|0|7241540810645061118|-]: Sent STUN BINDING request, id=3449507936416b5665686e35, use_candidate=0, nomination=0
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218362330368
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218362363871
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218362397449
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218362430856
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218362463221
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218362496929
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218362530404
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218362563968
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218362596479
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 28
+(video_frame_writer.cc:80): FRAME WRITE: 218362630037
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218362663315
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218362697036
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218362730551
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218362763978
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218362797350
+(connection.cc:1167): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--I|-|0|0|7241540810645061118|-]: Sent STUN BINDING request, id=71794d7a7278655530646e6a, use_candidate=0, nomination=0
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218362830903
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218362863515
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 28
+(video_frame_writer.cc:80): FRAME WRITE: 218362897046
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218362930477
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218362963929
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218362996467
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218363030026
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218363062296
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218363095981
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218363129425
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218363162780
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218363196447
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218363229801
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218363262309
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218363295878
+(connection.cc:1167): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--I|-|0|0|7241540810645061118|-]: Sent STUN BINDING request, id=4e556c76776e756566753464, use_candidate=0, nomination=0
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218363329262
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218363362704
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218363395217
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218363428775
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218363462312
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218363496848
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218363529326
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218363562675
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218363596188
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218363629736
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218363662178
+(block_processor.cc:179): Delay changed to 4 at block 2405
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218363695844
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218363729284
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218363762831
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 25
+(video_frame_writer.cc:80): FRAME WRITE: 218363795184
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218363828628
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218363862335
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218363896666
+(video_frame_writer.cc:80): FRAME WRITE: 218363929112
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 26
+(video_frame_writer.cc:80): FRAME WRITE: 218363962532
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218363996149
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 27
+(video_frame_writer.cc:80): FRAME WRITE: 218364030789
+(rtp_streams_synchronizer2.cc:119): Sync info stats: 218364031, {ssrc: 3230054379, cur_delay_ms: 30} {ssrc: 1448162602, cur_delay_ms: 34} {relative_delay_ms: 7} 
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 28
+(video_frame_writer.cc:80): FRAME WRITE: 218364064242
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 28
+(video_frame_writer.cc:80): FRAME WRITE: 218364097710
+(rtp_video_stream_receiver.cc:682): Packet received on SSRC: 1448162602 with payload type: 125, timestamp: 497531386, sequence number: 24709, arrival time: 1698690718452, abs send time: 15756427
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 29
+(video_frame_writer.cc:80): FRAME WRITE: 218364131144
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 29
+(video_frame_writer.cc:80): FRAME WRITE: 218364165768
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 30
+(video_frame_writer.cc:80): FRAME WRITE: 218364200200
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 30
+(video_frame_writer.cc:80): FRAME WRITE: 218364233700
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218364268102
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218364302657
+(connection.cc:1167): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--I|-|0|0|7241540810645061118|-]: Sent STUN BINDING request, id=567554614a63354478316d73, use_candidate=0, nomination=0
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 33
+(video_frame_writer.cc:80): FRAME WRITE: 218364336189
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 33
+(video_frame_writer.cc:80): FRAME WRITE: 218364369577
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 33
+(video_frame_writer.cc:80): FRAME WRITE: 218364403026
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 34
+(video_frame_writer.cc:80): FRAME WRITE: 218364437447
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 33
+(video_frame_writer.cc:80): FRAME WRITE: 218364469981
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 34
+(video_frame_writer.cc:80): FRAME WRITE: 218364503509
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 34
+(video_frame_writer.cc:80): FRAME WRITE: 218364536068
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 34
+(video_frame_writer.cc:80): FRAME WRITE: 218364571428
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 33
+(video_frame_writer.cc:80): FRAME WRITE: 218364603781
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 33
+(video_frame_writer.cc:80): FRAME WRITE: 218364636358
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 33
+(video_frame_writer.cc:80): FRAME WRITE: 218364669764
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 33
+(video_frame_writer.cc:80): FRAME WRITE: 218364702227
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 34
+(video_frame_writer.cc:80): FRAME WRITE: 218364737833
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 34
+(video_frame_writer.cc:80): FRAME WRITE: 218364770094
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 34
+(video_frame_writer.cc:80): FRAME WRITE: 218364803821
+(connection.cc:1167): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--I|-|0|0|7241540810645061118|-]: Sent STUN BINDING request, id=77597133506b4a34384b3766, use_candidate=0, nomination=0
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 33
+(video_frame_writer.cc:80): FRAME WRITE: 218364835426
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 33
+(video_frame_writer.cc:80): FRAME WRITE: 218364869888
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 34
+(video_frame_writer.cc:80): FRAME WRITE: 218364904540
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 34
+(video_frame_writer.cc:80): FRAME WRITE: 218364937863
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 34
+(video_frame_writer.cc:80): FRAME WRITE: 218364970319
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 34
+(video_frame_writer.cc:80): FRAME WRITE: 218365004884
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 34
+(video_frame_writer.cc:80): FRAME WRITE: 218365037442
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 34
+(video_frame_writer.cc:80): FRAME WRITE: 218365070806
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 34
+(video_frame_writer.cc:80): FRAME WRITE: 218365103272
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 34
+(video_frame_writer.cc:80): FRAME WRITE: 218365137753
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 34
+(video_frame_writer.cc:80): FRAME WRITE: 218365170431
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 34
+(video_frame_writer.cc:80): FRAME WRITE: 218365203782
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 34
+(video_frame_writer.cc:80): FRAME WRITE: 218365236423
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 34
+(video_frame_writer.cc:80): FRAME WRITE: 218365271902
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218365305427
+(connection.cc:1167): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--I|-|0|0|7241540810645061118|-]: Sent STUN BINDING request, id=424b70675a58335977737464, use_candidate=0, nomination=0
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218365338947
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218365371407
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218365404917
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218365438316
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218365471775
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218365504411
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218365537895
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218365571364
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218365604937
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218365637496
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218365673051
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218365705533
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218365739128
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218365771671
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218365804287
+(connection.cc:1167): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--I|-|0|0|7241540810645061118|-]: Sent STUN BINDING request, id=4f315a537546384a39506c48, use_candidate=0, nomination=0
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218365838613
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218365871193
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218365904643
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218365937164
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218365971719
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218366004397
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218366039032
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218366071503
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218366105851
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218366138419
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218366171908
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218366204376
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218366238897
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218366271273
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218366304924
+(video_frame_writer.cc:80): FRAME WRITE: 218366337393
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218366371917
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218366405439
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218366438872
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218366471392
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218366505820
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218366538395
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218366571822
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218366604264
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218366637749
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 34
+(video_frame_writer.cc:80): FRAME WRITE: 218366671287
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218366704801
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218366738299
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218366771794
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218366805307
+(connection.cc:1167): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--I|-|0|0|7241540810645061118|-]: Sent STUN BINDING request, id=462b36355773756c384a7456, use_candidate=0, nomination=0
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218366838755
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218366871392
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218366905115
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218366939360
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218366972845
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218367005381
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218367037828
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218367072514
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218367106419
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218367139456
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218367172061
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218367205490
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218367239267
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218367272455
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218367304411
+(connection.cc:1167): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--I|-|0|0|7241540810645061118|-]: Sent STUN BINDING request, id=4152564969732b69564c4f41, use_candidate=0, nomination=0
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218367338050
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218367371358
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218367405189
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218367438588
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218367472211
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218367505591
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218367539087
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218367571548
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218367604941
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218367638771
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218367671162
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218367704776
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218367737188
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218367771743
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 34
+(video_frame_writer.cc:80): FRAME WRITE: 218367805291
+(connection.cc:1167): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--I|-|0|0|7241540810645061118|-]: Sent STUN BINDING request, id=32467a764d417062684a3334, use_candidate=0, nomination=0
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218367838744
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 34
+(video_frame_writer.cc:80): FRAME WRITE: 218367871358
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218367905767
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218367938131
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218367971810
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368004567
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368038743
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368071198
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368104758
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368137226
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368171788
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368205232
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368238675
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368271137
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368304762
+(remote_ntp_time_estimator.cc:86): RTP timestamp: 497909476 in NTP clock: 3907679522648 estimated time in receiver NTP clock: 3907679522649
+(connection.cc:1167): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--I|-|0|0|7241540810645061118|-]: Sent STUN BINDING request, id=4549502f33363155737a6c6b, use_candidate=0, nomination=0
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368338378
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368371746
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368404218
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368437863
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368471365
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368504830
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368537427
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218368572092
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368605540
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368638898
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368671443
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218368705065
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368738520
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368772036
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368804464
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368837246
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368872768
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368905205
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368938869
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218368971333
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218369004888
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218369038337
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218369071913
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218369104307
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218369137864
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218369171494
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218369205031
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218369237652
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218369272031
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218369305576
+(connection.cc:828): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C--I|-|0|0|7241540810645061118|-]: Timed out after 15153 ms without a response, rtt=6000
+(connection.cc:740): Conn[5401bd70:0:Net[eth0:172.16.11.x/24:Ethernet:id=1]:UK7Vegss:1:0:local:udp:172.16.11.x:59757->RDaAjmgk:1:1686052607:stun:udp:20.83.237.x:59920|C-xI|-|0|0|7241540810645061118|-]: Connection pruned
+(p2p_transport_channel.cc:1817): Channel[0|1|RW]: Transport channel state changed from 1 to 2
+(jsep_transport_controller.cc:1421): 0 Transport 1 state changed. Check if state is complete.
+(connection.cc:1216): Connection deleted with number of pings sent: 25
+(p2p_transport_channel.cc:2007): Channel[0|1|RW]: Removed connection 5401bd70 (1 remaining)
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218369338305
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218369371687
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218369404324
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218369438784
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218369471419
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218369504988
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218369537442
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218369572217
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 35
+(video_frame_writer.cc:80): FRAME WRITE: 218369604590
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218369639239
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218369672882
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218369706354
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218369739747
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218369772375
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218369805837
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218369839417
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218369872894
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218369905436
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218369938890
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218369972561
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 37
+(video_frame_writer.cc:80): FRAME WRITE: 218370006183
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218370039695
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 36
+(video_frame_writer.cc:80): FRAME WRITE: 218370072293
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 38
+(video_frame_writer.cc:80): FRAME WRITE: 218370108094
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218370134285
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218370167590
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218370200321
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218370233819
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218370267345
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218370300939
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218370334373
+(remote_ntp_time_estimator.cc:86): RTP timestamp: 1418266754 in NTP clock: 3907679524672 estimated time in receiver NTP clock: 3907679524673
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218370368036
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218370401487
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218370435090
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218370467511
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218370500092
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218370533619
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218370567207
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218370600724
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218370634366
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218370667885
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218370701330
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218370734875
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218370767445
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218370801013
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218370833544
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218370867957
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218370901633
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218370934225
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218370967655
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218371000253
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218371034853
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 30
+(video_frame_writer.cc:80): FRAME WRITE: 218371067249
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218371100792
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218371133361
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218371167974
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218371201521
+(video_frame_writer.cc:80): FRAME WRITE: 218371234979
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218371267510
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218371300985
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218371334582
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218371368084
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218371400645
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218371434003
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218371468572
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218371502142
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218371535829
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218371568444
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218371602002
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218371635599
+(video_frame_writer.cc:80): FRAME WRITE: 218371669047
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 33
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218371701621
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 33
+(video_frame_writer.cc:80): FRAME WRITE: 218371735092
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218371768583
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218371802290
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218371835747
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218371868321
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218371901774
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218371935397
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 33
+(video_frame_writer.cc:80): FRAME WRITE: 218371969037
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218372001766
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218372034273
+(video_frame_writer.cc:80): FRAME WRITE: 218372068749
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218372102197
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218372135680
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218372168391
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218372201810
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218372235531
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218372269010
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218372301835
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218372334171
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218372368764
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218372402290
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218372434912
+(video_frame_writer.cc:80): FRAME WRITE: 218372467401
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218372500871
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218372534521
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218372567980
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218372600518
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218372633978
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 32
+(video_frame_writer.cc:80): FRAME WRITE: 218372668648
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 856
+(video_frame_writer.cc:80): FRAME WRITE: 218373526426
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 823
+(video_frame_writer.cc:80): FRAME WRITE: 218373526885
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 791
+(video_frame_writer.cc:80): FRAME WRITE: 218373527324
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 758
+(video_frame_writer.cc:80): FRAME WRITE: 218373527766
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 725
+(video_frame_writer.cc:80): FRAME WRITE: 218373528222
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 692
+(video_frame_writer.cc:80): FRAME WRITE: 218373528657
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 660
+(video_frame_writer.cc:80): FRAME WRITE: 218373529082
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 627
+(video_frame_writer.cc:80): FRAME WRITE: 218373529456
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 593
+(video_frame_writer.cc:80): FRAME WRITE: 218373529831
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 561
+(video_frame_writer.cc:80): FRAME WRITE: 218373530202
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 527
+(video_frame_writer.cc:80): FRAME WRITE: 218373530567
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 494
+(video_frame_writer.cc:80): FRAME WRITE: 218373530931
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 461
+(video_frame_writer.cc:80): FRAME WRITE: 218373531316
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 428
+(video_frame_writer.cc:80): FRAME WRITE: 218373531688
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 396
+(video_frame_writer.cc:80): FRAME WRITE: 218373532064
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 363
+(video_frame_writer.cc:80): FRAME WRITE: 218373532436
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 330
+(video_frame_writer.cc:80): FRAME WRITE: 218373532801
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 297
+(video_frame_writer.cc:80): FRAME WRITE: 218373533161
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 264
+(video_frame_writer.cc:80): FRAME WRITE: 218373533530
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 230
+(video_frame_writer.cc:80): FRAME WRITE: 218373533901
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 198
+(video_frame_writer.cc:80): FRAME WRITE: 218373534275
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 164
+(video_frame_writer.cc:80): FRAME WRITE: 218373534639
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 131
+(video_frame_writer.cc:80): FRAME WRITE: 218373535001
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 99
+(video_frame_writer.cc:80): FRAME WRITE: 218373535376
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 66
+(video_frame_writer.cc:80): FRAME WRITE: 218373535743
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 33
+(video_frame_writer.cc:80): FRAME WRITE: 218373536117
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218373567676
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218373600186
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218373633817
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218373667812
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218373701887
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218373734777
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218373767213
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218373800850
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218373834434
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218373867846
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218373900110
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218373933947
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218373967409
+(receive_statistics_proxy2.cc:941): E2E FRAME DELAY: 31
+(video_frame_writer.cc:80): FRAME WRITE: 218374001959
+(conductor.cc:525): Received unknown message. BYE
+(openssl_stream_adapter.cc:912): Cleanup
+(dtls_transport.cc:682): DtlsTransport[0|1|_W]: DTLS transport closed by remote
+(jsep_transport_controller.cc:1344):  Transport 0 writability changed to 0.
+(peer_connection.cc:4698): Changing IceConnectionState 2 => 5
+(channel.cc:550): Channel not writable (0)
+(channel.cc:550): Channel not writable (1)
+(srtp_transport.cc:366): The params in SRTP transport are reset.
+(channel.cc:816): Changing voice state, recv=1 send=1
+(video_send_stream.cc:148): UpdateActiveSimulcastLayers: {1}
+(channel.cc:965): Changing video state, send=1
+(bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 0 bps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 0 bps
+(webrtc_voice_engine.cc:1959): SetOutputVolume() to 0 for recv stream with ssrc 3230054379
+(webrtc_video_engine.cc:1236): SetVideoSend (ssrc= 852632439, options: nullptr, source = nullptr)
+(webrtc_video_engine.cc:1532): SetSink: ssrc:1448162602 nullptr
+(channel.cc:517): Channel disabled
+(video_send_stream.cc:177): VideoSendStream::Stop
+(channel.cc:965): Changing video state, send=0
+(video_send_stream_impl.cc:386): VideoSendStream::Stop
+(rtp_rtcp_impl.cc:312): Failed to send RTCP BYE
+(video_send_stream.cc:177): VideoSendStream::Stop
+(video_stream_encoder.cc:1699): Video suspend state changed to: suspended
+(video_send_stream_impl.cc:386): VideoSendStream::Stop
+(video_send_stream_impl.cc:386): VideoSendStream::Stop
+(video_send_stream_impl.cc:311): ~VideoSendStreamInternal: {encoder_settings: { experiment_cpu_load_estimator: off}}, rtp: {ssrcs: [852632439], rids: [], mid: '1', rtcp_mode: RtcpMode::kReducedSize, max_packet_size: 1200, extmap-allow-mixed: false, extensions: [{uri: http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07, id: 8}, {uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 9}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 12}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 11}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}], lntf: {enabled: false}, nack: {rtp_history_ms: 1000}, ulpfec: {ulpfec_payload_type: 124, red_payload_type: 125, red_rtx_payload_type: 122}, payload_name: VP8, payload_type: 96, raw_payload: false, flexfec: {payload_type: -1, ssrc: 0, protected_media_ssrcs: []}, rtx: {ssrcs: [1257243719], payload_type: 97}, c_name: 6CF3Haa3FsGBYtd3}, rtcp_report_interval_ms: 1000, send_transport: (Transport), render_delay_ms: 0, target_delay_ms: 0, suspend_below_min_bitrate: off}
+(send_statistics_proxy.cc:667): Frames encoded 0
+WebRTC.Video.DroppedFrames.Capturer 0
+WebRTC.Video.DroppedFrames.EncoderQueue 0
+WebRTC.Video.DroppedFrames.Encoder 0
+WebRTC.Video.DroppedFrames.Ratelimiter 0
+WebRTC.Video.DroppedFrames.CongestionWindow 0
+(video_receive_stream2.cc:270): ~VideoReceiveStream2: {decoders: [{payload_type: 96, payload_name: VP8, codec_params: {}}, {payload_type: 98, payload_name: VP9, codec_params: {profile-id: 0}}, {payload_type: 100, payload_name: VP9, codec_params: {profile-id: 2}}, {payload_type: 127, payload_name: AV1X, codec_params: {}}], rtp: {remote_ssrc: 1448162602, local_ssrc: 852632439, rtcp_mode: RtcpMode::kReducedSize, rtcp_xr: {receiver_reference_time_report: off}, transport_cc: on, lntf: {enabled: false}, nack: {rtp_history_ms: 1000}, ulpfec_payload_type: 124, red_type: 125, rtx_ssrc: 417219447, rtx_payload_types: {97 (pt) -> 96 (apt), 99 (pt) -> 98 (apt), 101 (pt) -> 100 (apt), 122 (pt) -> 125 (apt), 123 (pt) -> 127 (apt), }, raw_payload_types: {}, extensions: [{uri: http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07, id: 8}, {uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 9}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 12}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 11}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}, {uri: urn:ietf:params:rtp-hdrext:toffset, id: 14}]}, renderer: (renderer), render_delay_ms: 10, sync_group: stream_id, target_delay_ms: 0}
+(receive_statistics_proxy2.cc:495): WebRTC.Video.ReceiveStreamLifetimeInSeconds 19
+Frames decoded 594
+WebRTC.Video.DroppedFrames.Receiver 1
+WebRTC.Video.ReceivedPacketsLostInPercent 0
+WebRTC.Video.DecodedFramesPerSecond 30
+WebRTC.Video.RenderFramesPerSecond 30
+WebRTC.Video.AVSyncOffsetInMs 45
+WebRTC.Video.KeyFramesReceivedInPermille 2
+WebRTC.Video.Decoded.Vp8.Qp 26
+WebRTC.Video.DecodeTimeInMs 2
+WebRTC.Video.JitterBufferDelayInMs 18
+WebRTC.Video.TargetDelayInMs 30
+WebRTC.Video.CurrentDelayInMs 29
+WebRTC.Video.EndToEndDelayInMs 53
+WebRTC.Video.EndToEndDelayMaxInMs 856
+WebRTC.Video.InterframeDelayInMs 33
+WebRTC.Video.InterframeDelayMaxInMs 67
+WebRTC.Video.InterframeDelay95PercentileInMs 35
+WebRTC.Video.ReceivedWidthInPixels 704
+WebRTC.Video.ReceivedHeightInPixels 576
+WebRTC.Video.EndToEndDelayInMs.S0 53
+WebRTC.Video.EndToEndDelayMaxInMs.S0 856
+WebRTC.Video.InterframeDelayInMs.S0 33
+WebRTC.Video.InterframeDelayMaxInMs.S0 67
+WebRTC.Video.InterframeDelay95PercentileInMs.S0 35
+WebRTC.Video.ReceivedWidthInPixels.S0 704
+WebRTC.Video.ReceivedHeightInPixels.S0 576
+WebRTC.Video.MediaBitrateReceivedInKbps.S0 1935
+WebRTC.Video.KeyFramesReceivedInPermille.S0 2
+WebRTC.Video.Decoded.Vp8.Qp.S0 26
+WebRTC.Video.MediaBitrateReceivedInKbps 2038
+
+(video_quality_observer2.cc:134): WebRTC.Video.MeanTimeBetweenFreezesMs 9511
+WebRTC.Video.MeanFreezeDurationMs 857
+WebRTC.Video.TimeInHdPercentage 0
+WebRTC.Video.TimeInBlockyVideoPercentage 1
+WebRTC.Video.NumberResolutionDownswitchesPerMinute 0
+WebRTC.Video.NumberFreezesPerMinute 3
+WebRTC.Video.HarmonicFrameRate 14
+
+(video_render_frames.cc:47): WebRTC.Video.DroppedFrames.RenderQueue 0
+(channel.cc:159): Destroyed channel: 1
+(channel.cc:517): Channel disabled
+(channel.cc:816): Changing voice state, recv=0 send=0
+(webrtc_voice_engine.cc:1833): RemoveSendStream: 969695178
+(audio_send_stream.cc:176): ~AudioSendStream: 969695178
+(webrtc_voice_engine.cc:1905): RemoveRecvStream: 3230054379
+(call.cc:1056): UpdateAggregateNetworkState: aggregate_state change to down
+(audio_receive_stream.cc:144): ~AudioReceiveStream: 3230054379
+(pacing_controller.cc:155): PacedSender paused.
+(control_handler.cc:78): Bitrate estimate state changed, BWE: 300 kbps.
+(channel.cc:159): Destroyed channel: 0
+(peer_connection.cc:1077): Session: 1001983186071747856 is destroyed.
+(openssl_stream_adapter.cc:912): Cleanup
+(call.cc:552): WebRTC.Call.EstimatedSendBitrateInKbps, periodic_samples:9, {min:300, avg:300, max:300}
+(call.cc:560): WebRTC.Call.PacerBitrateInKbps, periodic_samples:9, {min:300, avg:300, max:300}
+(call.cc:582): WebRTC.Call.VideoBitrateReceivedInBps, periodic_samples:9, {min:1460688, avg:1978912, max:2100176}
+(call.cc:590): WebRTC.Call.AudioBitrateReceivedInBps, periodic_samples:9, {min:41264, avg:42080, max:42880}
+(call.cc:598): WebRTC.Call.RtcpBitrateReceivedInBps, periodic_samples:9, {min:2016, avg:2800, max:3456}
+(call.cc:606): WebRTC.Call.BitrateReceivedInBps, periodic_samples:9, {min:1473168, avg:2020456, max:2146696}
+(paced_sender.cc:176): ProcessThreadAttached 0x0
+(paced_sender.cc:176): ProcessThreadAttached 0x0
+(dtmf_sender.cc:225): The Dtmf provider is deleted. Clear the sending queue.
+(webrtc_video_engine.cc:576): WebRtcVideoEngine::~WebRtcVideoEngine
+(webrtc_voice_engine.cc:214): WebRtcVoiceEngine::~WebRtcVoiceEngine
